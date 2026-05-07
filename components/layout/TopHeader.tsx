@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ShoppingCart, Menu, X, Search, Zap } from "lucide-react";
+import { ShoppingCart, Menu, X, Search } from "lucide-react";
 import { useCart } from "@/context/ShoppingCartContext";
 
 export default function Navbar() {
@@ -21,12 +21,16 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 glassmorphism border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+      <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '6px' }} className="flex-shrink-0 md:gap-2.5">
-            <img src="/EM/images/logo.jpg" className="h-8 md:h-10 w-auto object-contain logo" alt="Electromart Logo" />
-            <span className="font-bold text-xl md:text-3xl tracking-tight text-brand-black">
+          <Link href="/" className="flex items-center gap-4 flex-shrink-0">
+            <img
+              src="/images/logo.jpg"
+              className="h-12 md:h-16 w-auto object-contain logo"
+              alt="Electromart Logo"
+            />
+            <span className="font-black text-2xl md:text-3xl xl:text-4xl tracking-tight text-brand-black leading-none">
               ELECTROMART
             </span>
           </Link>
@@ -37,7 +41,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-brand-orange ${
+                className={`text-sm font-semibold transition-colors hover:text-brand-orange ${
                   isActive(link.href) ? "text-brand-orange" : "text-gray-600"
                 }`}
               >
@@ -52,37 +56,37 @@ export default function Navbar() {
               href="/products"
               className="text-gray-500 hover:text-brand-orange transition-colors"
             >
-              <Search size={20} />
+              <Search size={22} />
             </Link>
-            
+
             <Link
               href="/cart"
               className="relative p-2 text-gray-600 hover:text-brand-orange transition-colors group"
             >
-              <ShoppingCart size={24} />
+              <ShoppingCart size={26} />
               {cartCount > 0 && (
-                <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white transform translate-x-1/4 -translate-y-1/4 bg-brand-orange rounded-full group-hover:scale-110 transition-transform">
+                <span className="absolute top-0 right-0 inline-flex items-center justify-center w-5 h-5 text-xs font-bold leading-none text-white bg-brand-orange rounded-full group-hover:scale-110 transition-transform">
                   {cartCount}
                 </span>
               )}
             </Link>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="flex items-center md:hidden space-x-4">
+          {/* Mobile: cart + hamburger */}
+          <div className="flex items-center md:hidden space-x-3">
             <Link href="/cart" className="relative p-2 text-gray-600">
               <ShoppingCart size={24} />
               {cartCount > 0 && (
-                <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white transform translate-x-1/4 -translate-y-1/4 bg-brand-orange rounded-full">
+                <span className="absolute top-0 right-0 inline-flex items-center justify-center w-5 h-5 text-xs font-bold leading-none text-white bg-brand-orange rounded-full">
                   {cartCount}
                 </span>
               )}
             </Link>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-600 hover:text-brand-orange focus:outline-none"
+              className="text-gray-600 hover:text-brand-orange focus:outline-none p-1"
             >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMenuOpen ? <X size={26} /> : <Menu size={26} />}
             </button>
           </div>
         </div>
@@ -90,13 +94,13 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden glassmorphism border-t border-gray-100 absolute w-full">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="md:hidden glassmorphism border-t border-gray-100 absolute w-full shadow-lg">
+          <div className="px-4 pt-3 pb-4 space-y-1">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className={`block px-3 py-2 rounded-md text-base font-medium ${
+                className={`block px-4 py-3 rounded-xl text-base font-semibold transition-colors ${
                   isActive(link.href)
                     ? "text-brand-orange bg-brand-orange/10"
                     : "text-gray-700 hover:text-brand-orange hover:bg-gray-50"

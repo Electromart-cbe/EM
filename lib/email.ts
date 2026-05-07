@@ -52,6 +52,10 @@ export const sendCustomerEmail = async (
     order_rows: generateOrderRows(cart),
 
     total_price: `₹${cartTotal.toLocaleString("en-IN")}`,
+
+    order_notes: formData.notes?.trim()
+      ? formData.notes
+      : "No additional notes",
   };
 
   const templateId = "template_xf1iqgj";
@@ -89,6 +93,10 @@ export const sendShopEmail = async (
     order_rows: generateOrderRows(cart),
 
     total_price: `₹${cartTotal.toLocaleString("en-IN")}`,
+
+    order_notes: formData.notes?.trim()
+      ? formData.notes
+      : "No additional notes",
 
     shop_email: "electromart.cbe@gmail.com",
   };

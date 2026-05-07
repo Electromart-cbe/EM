@@ -7,14 +7,13 @@ import { Minus, Plus, Trash2, ArrowRight, ShoppingBag, CheckCircle } from "lucid
 import { sendCustomerEmail, sendShopEmail } from "@/lib/email";
 import { useCart } from "@/context/ShoppingCartContext";
 
-const basePath = process.env.NODE_ENV === "production" ? "/EM" : "";
-
 export default function CartPage() {
   const { cart, removeFromCart, updateQuantity, cartTotal, clearCart } = useCart();
   
   const formatUrl = (url?: string) => {
-    if (!url) return `${basePath}/images/products/default.jpg`;
-    return url.replace(/^\/products\//, '/EM/products/').toLowerCase().replace(/\s+/g, '-');
+    if (!url) return `/images/placeholder.png`;
+    if (url.startsWith('http')) return url;
+    return url.toLowerCase().replace(/\s+/g, '-');
   };
 
   const [isCheckingOut, setIsCheckingOut] = useState(false);

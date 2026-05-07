@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { ShoppingCart } from "lucide-react";
+import { ShoppingCart, Star } from "lucide-react";
 import { Product, useCart } from "@/context/ShoppingCartContext";
 
 export default function ProductItemCard({ product }: { product: Product }) {
@@ -14,52 +14,69 @@ export default function ProductItemCard({ product }: { product: Product }) {
     addToCart(product);
   };
 
+  const imgSrc =
+    product.images?.[0]?.startsWith("http")
+      ? product.images[0]
+      : product.images?.[0]?.toLowerCase().replace(/\s+/g, "-") ||
+        "/images/placeholder.png";
+
   return (
     <Link href={`/products/${product.id}`} className="group block h-full">
-      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-2xl hover:-translate-y-1 hover:border-brand-orange/30 transition-all duration-300 flex flex-col h-full relative cursor-pointer">
+      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 hover:border-brand-orange/30 transition-all duration-300 flex flex-col h-full relative cursor-pointer">
+        {/* Badge */}
         {product.originalPrice && (
           <div className="absolute top-3 left-3 z-10">
             <span className="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-sm">
-              Student Deal
+              Deal
             </span>
           </div>
         )}
-        
-        <div className="relative bg-gray-50 overflow-hidden p-4 flex items-center justify-center">
-          <div className="relative w-full transform group-hover:scale-110 transition-transform duration-500 flex items-center justify-center">
+
+        {/* Image Container */}
+        <div className="relative bg-white overflow-hidden rounded-xl m-3 mb-0">
+          <div className="aspect-square w-full flex items-center justify-center p-4 bg-white">
             <img
-              src={product.images?.[0]?.replace(/^\/products\//, '/EM/products/').toLowerCase().replace(/\s+/g, '-')}
+              src={imgSrc}
               alt={product.name}
               loading="lazy"
-              className="w-full h-40 sm:h-52 md:h-60 object-contain"
+              className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+              onError={(e) => {
+                e.currentTarget.src = "/images/placeholder.png";
+                e.currentTarget.onerror = null;
+              }}
             />
           </div>
         </div>
 
+        {/* Info */}
         <div className="p-3 sm:p-4 flex flex-col flex-grow">
-          <div className="text-xs font-semibold text-brand-orange uppercase tracking-wider mb-2">
+          <div className="text-xs font-semibold text-brand-orange uppercase tracking-wider mb-1.5">
             {product.category}
           </div>
-          <h3 className="font-semibold text-gray-900 mb-1 line-clamp-2 group-hover:text-brand-orange transition-colors">
+          <h3 className="font-semibold text-gray-900 text-sm leading-snug mb-3 line-clamp-2 group-hover:text-brand-orange transition-colors flex-grow">
             {product.name}
           </h3>
-          <div className="mt-auto pt-4 flex items-center justify-between">
+          <div className="mt-auto flex items-center justify-between gap-2">
             <div className="flex flex-col">
               {product.originalPrice && (
-                <span className="text-sm text-gray-400 line-through">
+                <span className="text-xs text-gray-400 line-through">
                   ₹{(product.originalPrice || 0).toLocaleString("en-IN")}
                 </span>
               )}
-              <span className={`text-lg font-bold ${product.originalPrice ? 'text-red-500' : 'text-gray-900'}`}>
+              <span
+                className={`text-base font-black ${
+                  product.originalPrice ? "text-red-500" : "text-brand-orange"
+                }`}
+              >
                 ₹{(product.price || 0).toLocaleString("en-IN")}
               </span>
             </div>
             <button
               onClick={handleAddToCart}
-              className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-600 hover:bg-brand-orange hover:text-white transition-colors z-10 relative"
+              className="w-9 h-9 rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-brand-orange hover:text-white hover:border-brand-orange hover:scale-110 transition-all duration-200 z-10 relative flex-shrink-0"
               aria-label="Add to cart"
             >
-              <ShoppingCart size={18} />
+              <ShoppingCart size={16} />
             </button>
           </div>
         </div>

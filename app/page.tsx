@@ -10,14 +10,29 @@ const products = productsData as Product[];
 export default function Home() {
   console.log("Total products loaded (Home):", products.length);
 
-  // Filter products: valid products must have at least 1 image
-  const validProducts = products.filter((p) => p.images && p.images.length > 0);
+  // Filter products: valid products must have valid images
+  const validProducts = products.filter(
+    (p) =>
+      Array.isArray(p.images) &&
+      p.images.some(
+        (img) =>
+          img &&
+          typeof img === "string" &&
+          img.trim() !== "" &&
+          !img.includes("placeholder")
+      )
+  );
 
   // Simple logic to get some products for display.
-  const trendingProducts = validProducts.slice(0, 8);
+  const trendingProducts = validProducts.slice(0, 10);
 
   // Derive categories from valid products
-  const categories = Array.from(new Set(validProducts.map((p) => p.category)));
+  const categories = Array.from(new Set(
+    validProducts
+      .map((p) => p.category)
+      .filter(Boolean)
+      .filter((c) => c.trim() !== "")
+  ));
 
   // If no products exist yet (placeholder JSON), show some empty states.
   const hasProducts = validProducts.length > 0;
@@ -32,7 +47,7 @@ export default function Home() {
           <div className="absolute -bottom-1/2 -left-1/4 w-[800px] h-[800px] rounded-full bg-blue-500/10 blur-[100px] opacity-50"></div>
         </div>
         
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+        <div className="relative max-w-[1400px] mx-auto px-4 md:px-6 lg:px-8 py-24 lg:py-32">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6">
               Fueling <span className="text-brand-orange">Tomorrow's Tech</span> Today.
@@ -61,7 +76,7 @@ export default function Home() {
 
       {/* Trust Section */}
       <section className="py-12 bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-colors">
               <div className="w-16 h-16 bg-brand-orange/10 text-brand-orange rounded-full flex items-center justify-center mb-4">
@@ -91,7 +106,7 @@ export default function Home() {
       {/* Categories Section */}
       {categories.length > 0 && (
         <section className="py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-8">
             <div className="flex items-center justify-between mb-12">
               <h2 className="text-3xl font-bold text-gray-900">Shop by Category</h2>
               <Link href="/products" className="text-brand-orange font-semibold flex items-center hover:underline">
@@ -117,7 +132,7 @@ export default function Home() {
 
       {/* Trending Products */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Trending Components</h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg">
@@ -126,7 +141,7 @@ export default function Home() {
           </div>
           
           {hasProducts ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
               {trendingProducts.map((product) => (
                 <ProductItemCard key={product.id} product={product} />
               ))}

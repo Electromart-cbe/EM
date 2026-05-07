@@ -4,7 +4,19 @@ import React, { useState } from "react";
 import { Search, Save, X, Check, Image as ImageIcon, AlertCircle } from "lucide-react";
 import productsData from "@/data/products.json";
 
+const checkHasValidImages = (product: any) => {
+  return Array.isArray(product?.images) &&
+    product.images.some(
+      (img: any) =>
+        img &&
+        typeof img === "string" &&
+        img.trim() !== "" &&
+        !img.includes("placeholder")
+    );
+};
+
 export default function ImagePicker() {
+  const savedProductsCount = productsData.filter(checkHasValidImages).length;
   const [query, setQuery] = useState("");
   const [productId, setProductId] = useState("");
   const [images, setImages] = useState<string[]>([]);
@@ -36,8 +48,8 @@ export default function ImagePicker() {
   };
 
   const saveSelectedImages = async () => {
-    if (selectedImages.length < 2 || selectedImages.length > 4) {
-      setError("Please select between 2 and 4 images.");
+    if (selectedImages.length < 1 || selectedImages.length > 4) {
+      setError("Please select between 1 and 4 images.");
       return;
     }
 
@@ -84,6 +96,9 @@ export default function ImagePicker() {
 
       setSuccess(`Successfully saved ${saveData.images.length} local images to product!`);
       setSelectedImages([]);
+      setTimeout(() => {
+        window.location.reload();
+      }, 500);
     } catch (err: any) {
       setError(err.message || "Failed to save selected images");
     } finally {
@@ -91,17 +106,30 @@ export default function ImagePicker() {
     }
   };
 
+  const missingCount = productsData.filter(p => !checkHasValidImages(p)).length;
+
   return (
-    <div className="max-w-5xl mx-auto px-4 py-12">
-      <div className="mb-8 flex items-center justify-between">
+    <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-8 py-12">
+      <div className="mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div>
           <h1 className="text-3xl font-bold text-gray-900 flex items-center gap-3">
             <ImageIcon className="text-brand-orange" size={32} />
-            Simple Image Picker
+            Image Picker
           </h1>
-          <p className="text-gray-500 mt-2">Generate and select product images instantly.</p>
+          <p className="text-gray-500 mt-2">Manually select and save product images.</p>
         </div>
-        <div className="text-right">
+        <div className="flex flex-col gap-2 items-end">
+          <span className="inline-block bg-green-50 text-green-700 px-4 py-2 rounded-lg font-medium text-sm border border-green-100">
+            Saved: <span className="font-bold text-lg">{savedProductsCount}</span>/{productsData.length}
+          </span>
+          {missingCount > 0 && (
+            <a
+              href="/auto-image-picker"
+              className="inline-flex items-center gap-2 bg-brand-orange text-white px-4 py-2 rounded-lg font-bold text-sm hover:bg-[#ff943d] transition-colors shadow-sm"
+            >
+              ⚡ Auto Fill {missingCount} Missing Images
+            </a>
+          )}
           <span className="inline-block bg-blue-50 text-blue-700 px-4 py-2 rounded-lg font-medium text-sm border border-blue-100">
             Selected: <span className="font-bold text-lg">{selectedImages.length}</span>/4
           </span>
@@ -111,7 +139,18 @@ export default function ImagePicker() {
       <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Select Product to Update</label>
+            <label className="block text-sm font-medium text-gray-700 mb-1 flex items-center justify-between">
+              Select Product to Update
+              {productId && (() => {
+                const p = productsData.find(prod => prod.id === productId);
+                const hasValidImages = checkHasValidImages(p);
+                return hasValidImages ? (
+                  <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-bold flex items-center gap-1">
+                    <Check size={12} /> {p?.images?.length || 0} Images Saved
+                  </span>
+                ) : null;
+              })()}
+            </label>
             <select 
               value={productId}
               onChange={(e) => {
@@ -125,9 +164,15 @@ export default function ImagePicker() {
             >
               <option value="">-- Choose a Product --</option>
               {/* Sort products alphabetically */}
-              {[...productsData].sort((a, b) => a.name.localeCompare(b.name)).map((p: any) => (
-                <option key={p.id} value={p.id}>{p.name}</option>
-              ))}
+              {[...productsData].sort((a, b) => a.name.localeCompare(b.name)).map((p: any) => {
+                const hasValidImages = checkHasValidImages(p);
+                return (
+                  <option key={p.id} value={p.id}>
+                    {hasValidImages ? "✅ " : ""}
+                    {p.name}
+                  </option>
+                );
+              })}
             </select>
           </div>
           

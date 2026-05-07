@@ -2,55 +2,84 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { ShoppingCart, ArrowLeft, Check, ShieldCheck, Truck } from "lucide-react";
+import { ArrowLeft, ShieldCheck, Truck, Zap, Package } from "lucide-react";
 import { Product, useCart } from "@/context/ShoppingCartContext";
 import ProductItemCard from "@/components/product/ProductItemCard";
 import AddToCartButton from "@/components/product/AddToCartButton";
 
-const basePath = process.env.NODE_ENV === "production" ? "/EM" : "";
-
-export default function ProductDetailClient({ 
-  product, 
-  relatedProducts 
-}: { 
+export default function ProductDetailClient({
+  product,
+  relatedProducts,
+}: {
   product: Product;
   relatedProducts: Product[];
 }) {
   const { addRecentlyViewed, recentlyViewed } = useCart();
+
   const formatUrl = (url?: string) => {
-    if (!url) return `${basePath}/images/products/default.jpg`;
-    return url.replace(/^\/products\//, '/EM/products/').toLowerCase().replace(/\s+/g, '-');
+    if (!url) return `/images/placeholder.png`;
+    if (url.startsWith("http")) return url;
+    return url.toLowerCase().replace(/\s+/g, "-");
   };
 
-  const initialImageUrl = formatUrl(product.images?.[0]);
-  const [mainImage, setMainImage] = useState(initialImageUrl);
+  const validImages = (product.images || [])
+    .filter(
+      (img) =>
+        img &&
+        typeof img === "string" &&
+        img.trim() !== "" &&
+        !img.includes("placeholder")
+    )
+    .map(formatUrl);
+
+  const displayImages =
+    validImages.length > 0 ? validImages : ["/images/placeholder.png"];
+
+  const [mainImage, setMainImage] = useState(displayImages[0]);
+  const [activeThumb, setActiveThumb] = useState(0);
 
   useEffect(() => {
-    setMainImage(formatUrl(product.images?.[0]));
+    setMainImage(displayImages[0]);
+    setActiveThumb(0);
   }, [product]);
 
   useEffect(() => {
     addRecentlyViewed(product);
   }, [product, addRecentlyViewed]);
 
-  // Filter out the current product from recently viewed
-  const otherRecentlyViewed = recentlyViewed.filter(p => p.id !== product.id).slice(0, 4);
+  const otherRecentlyViewed = recentlyViewed
+    .filter((p) => p.id !== product.id)
+    .slice(0, 4);
+
+  const handleThumbClick = (url: string, idx: number) => {
+    setMainImage(url);
+    setActiveThumb(idx);
+  };
 
   return (
-    <div className="bg-white min-h-screen pb-24 md:pb-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <Link href="/products" className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-brand-orange mb-8 transition-colors">
-          <ArrowLeft size={16} className="mr-2" />
+    <div className="bg-gray-50 min-h-screen pb-24 md:pb-12">
+      <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-8 py-6 md:py-10">
+        {/* Breadcrumb */}
+        <Link
+          href="/products"
+          className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-brand-orange mb-6 transition-colors group"
+        >
+          <ArrowLeft
+            size={16}
+            className="mr-2 group-hover:-translate-x-1 transition-transform"
+          />
           Back to Products
         </Link>
 
-        <div className="flex flex-col md:flex-row gap-12 mb-16">
-          {/* Product Image */}
-          <div className="md:w-1/2">
-            <div className="bg-gray-50 rounded-3xl p-8 aspect-square flex items-center justify-center relative border border-gray-100">
+        {/* Main Product Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-14 mb-16">
+          {/* LEFT — Sticky Image Gallery */}
+          <div className="lg:sticky lg:top-28 lg:self-start space-y-4">
+            {/* Main Image Viewer */}
+            <div className="relative bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden aspect-square max-h-[550px] flex items-center justify-center p-6">
               {product.originalPrice && (
-                <div className="absolute top-6 left-6 z-10">
-                  <span className="bg-red-500 text-white text-sm font-bold px-3 py-1.5 rounded-lg shadow-sm">
+                <div className="absolute top-4 left-4 z-10">
+                  <span className="bg-red-500 text-white text-sm font-bold px-3 py-1.5 rounded-lg shadow">
                     Student Deal
                   </span>
                 </div>
@@ -58,94 +87,121 @@ export default function ProductDetailClient({
               <img
                 src={mainImage}
                 alt={product.name}
+                loading="lazy"
+                className="w-full h-full object-contain"
                 onError={(e) => {
-                  e.currentTarget.src = '/images/products/default.jpg';
+                  e.currentTarget.src = "/images/placeholder.png";
                   e.currentTarget.onerror = null;
                 }}
-                className="w-full h-full object-contain max-h-[400px]"
               />
             </div>
-            
-            {/* Thumbnails */}
-            {product.images && product.images.length > 1 && (
-              <div className="flex gap-4 mt-6 overflow-x-auto pb-2 px-1">
-                {product.images.map((img, idx) => {
-                  const imgUrl = formatUrl(img);
-                  const isSelected = mainImage === imgUrl;
-                  return (
-                    <button 
-                      key={idx}
-                      onClick={() => setMainImage(imgUrl)}
-                      className={`w-20 h-20 flex-shrink-0 rounded-xl border-2 overflow-hidden transition-all ${
-                        isSelected ? 'border-brand-orange shadow-md' : 'border-gray-200 hover:border-gray-300'
-                      }`}
-                    >
-                      <img 
-                        src={imgUrl} 
-                        alt={`${product.name} thumbnail ${idx + 1}`} 
-                        className="w-full h-full object-cover"
-                        onError={(e) => {
-                          e.currentTarget.src = '/images/products/default.jpg';
-                          e.currentTarget.onerror = null;
-                        }}
-                      />
-                    </button>
-                  );
-                })}
+
+            {/* Thumbnail Strip */}
+            {displayImages.length > 1 && (
+              <div className="flex gap-3 overflow-x-auto pb-1 scrollbar-thin">
+                {displayImages.map((img, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => handleThumbClick(img, idx)}
+                    className={`flex-shrink-0 w-20 h-20 rounded-xl border-2 overflow-hidden bg-white transition-all duration-200 flex items-center justify-center p-2 ${
+                      activeThumb === idx
+                        ? "border-brand-orange shadow-md scale-105"
+                        : "border-gray-200 hover:border-brand-orange/50 opacity-75 hover:opacity-100"
+                    }`}
+                  >
+                    <img
+                      src={img}
+                      alt={`${product.name} view ${idx + 1}`}
+                      loading="lazy"
+                      className="w-full h-full object-contain"
+                      onError={(e) => {
+                        e.currentTarget.src = "/images/placeholder.png";
+                        e.currentTarget.onerror = null;
+                      }}
+                    />
+                  </button>
+                ))}
               </div>
             )}
           </div>
 
-          {/* Product Info */}
-          <div className="md:w-1/2 flex flex-col">
-            <div className="text-sm font-bold text-brand-orange uppercase tracking-wider mb-3">
+          {/* RIGHT — Product Info */}
+          <div className="flex flex-col bg-white rounded-2xl border border-gray-100 shadow-sm p-6 md:p-8">
+            {/* Category */}
+            <div className="text-xs font-bold text-brand-orange uppercase tracking-widest mb-3">
               {product.category}
             </div>
-            <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+
+            {/* Name */}
+            <h1 className="text-2xl md:text-3xl xl:text-4xl font-extrabold text-gray-900 mb-5 leading-tight">
               {product.name}
             </h1>
-            
-            <div className="flex items-center gap-4 mb-6">
-              <div className="flex flex-col">
-                {product.originalPrice && (
-                  <span className="text-lg text-gray-400 line-through">
-                    ₹{product.originalPrice.toLocaleString("en-IN")}
-                  </span>
-                )}
-                <span className={`text-4xl font-black ${product.originalPrice ? 'text-red-500' : 'text-gray-900'}`}>
-                  ₹{product.price.toLocaleString("en-IN")}
+
+            {/* Price */}
+            <div className="flex items-end gap-3 mb-6">
+              <span
+                className={`text-3xl md:text-4xl font-black ${
+                  product.originalPrice ? "text-red-500" : "text-gray-900"
+                }`}
+              >
+                ₹{product.price.toLocaleString("en-IN")}
+              </span>
+              {product.originalPrice && (
+                <span className="text-xl text-gray-400 line-through mb-0.5">
+                  ₹{product.originalPrice.toLocaleString("en-IN")}
                 </span>
-              </div>
+              )}
+              {product.originalPrice && (
+                <span className="text-sm font-bold text-green-600 bg-green-50 px-2 py-0.5 rounded-full mb-0.5">
+                  Save ₹
+                  {(
+                    product.originalPrice - product.price
+                  ).toLocaleString("en-IN")}
+                </span>
+              )}
             </div>
 
-            <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-              {product.description}
-            </p>
+            {/* Description */}
+            {product.description && (
+              <p className="text-gray-600 leading-relaxed mb-6 text-sm md:text-base">
+                {product.description}
+              </p>
+            )}
 
-            <div className="flex flex-wrap gap-2 mb-8">
-              {(product.tags || []).map((tag) => (
-                <span key={tag} className="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-medium rounded-full">
-                  #{tag}
-                </span>
+            {/* Tags */}
+            {(product.tags || []).length > 0 && (
+              <div className="flex flex-wrap gap-2 mb-6">
+                {(product.tags || []).map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-3 py-1 bg-gray-100 hover:bg-brand-orange/10 text-gray-600 hover:text-brand-orange text-xs font-medium rounded-full transition-colors cursor-default"
+                  >
+                    #{tag}
+                  </span>
+                ))}
+              </div>
+            )}
+
+            {/* Value Props */}
+            <div className="grid grid-cols-2 gap-3 mb-8 py-5 border-y border-gray-100">
+              {[
+                { icon: ShieldCheck, label: "Quality Tested" },
+                { icon: Truck, label: "Fast Shipping" },
+                { icon: Zap, label: "Student Pricing" },
+                { icon: Package, label: "Secure Packaging" },
+              ].map(({ icon: Icon, label }) => (
+                <div key={label} className="flex items-center gap-3">
+                  <div className="w-9 h-9 bg-brand-orange/10 rounded-full flex items-center justify-center text-brand-orange flex-shrink-0">
+                    <Icon size={18} />
+                  </div>
+                  <span className="text-sm font-medium text-gray-700">
+                    {label}
+                  </span>
+                </div>
               ))}
             </div>
 
-            {/* Value props */}
-            <div className="grid grid-cols-2 gap-4 mb-10 py-6 border-y border-gray-100">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-brand-orange/10 rounded-full flex items-center justify-center text-brand-orange">
-                  <ShieldCheck size={20} />
-                </div>
-                <span className="text-sm font-medium text-gray-700">Quality Tested</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-brand-orange/10 rounded-full flex items-center justify-center text-brand-orange">
-                  <Truck size={20} />
-                </div>
-                <span className="text-sm font-medium text-gray-700">Fast Shipping</span>
-              </div>
-            </div>
-
+            {/* Add to Cart */}
             <AddToCartButton product={product} />
           </div>
         </div>
@@ -153,9 +209,11 @@ export default function ProductDetailClient({
         {/* Related Products */}
         {relatedProducts.length > 0 && (
           <div className="mb-16">
-            <h2 className="text-2xl font-bold text-gray-900 mb-8 border-b border-gray-100 pb-4">Related Components</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {relatedProducts.map(p => (
+            <h2 className="text-2xl font-bold text-gray-900 mb-8 border-b border-gray-200 pb-4">
+              Related Components
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
+              {relatedProducts.map((p) => (
                 <ProductItemCard key={p.id} product={p} />
               ))}
             </div>
@@ -165,9 +223,11 @@ export default function ProductDetailClient({
         {/* Recently Viewed */}
         {otherRecentlyViewed.length > 0 && (
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-8 border-b border-gray-100 pb-4">Recently Viewed</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {otherRecentlyViewed.map(p => (
+            <h2 className="text-2xl font-bold text-gray-900 mb-8 border-b border-gray-200 pb-4">
+              Recently Viewed
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
+              {otherRecentlyViewed.map((p) => (
                 <ProductItemCard key={p.id} product={p} />
               ))}
             </div>

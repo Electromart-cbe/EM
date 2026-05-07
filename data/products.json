@@ -1,266 +1,199 @@
 [
   {
-    "id": "raspberry-pi-4b-4gb-computer-vision-kit",
-    "name": "Raspberry Pi 4B 4GB Computer Vision Kit",
-    "price": 16999,
-    "tags": [
-      "microcomputer"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/files/Raspberry_Pi_4B_4GB_Computer_Vision_Kit.webp?v=1744184076"
-    ]
-  },
-  {
-    "id": "seeed-studio-xiao-rp2350-development-board",
-    "name": "Seeed Studio XIAO RP2350 Development Board",
-    "price": 1199,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "pludo-solar-wind-tower-stem-kit-diy-science-toy-for-kids-811-grade-35-learn-solar-energy-conversion",
-    "name": "Pludo Solar Wind Tower STEM Kit – DIY Science Toy for Kids 8–11 | Grade 3–5 Learn Solar Energy Conversion",
+    "id": "1-inch-led-digital-display-diy-clock-kit-blue-light-control-mcu-project-set-with-casing",
+    "name": "1-Inch LED Digital Display DIY Clock Kit (Blue) – Light-Control MCU Project Set with Casing",
     "price": 499,
     "tags": [
       "kit"
     ],
     "images": [
-      "/images/placeholder.png"
-    ]
+      "/products/1-inch-led-digital-display-diy-clock-kit--blue----light-control-mcu-project-set-with-casing-1.webp",
+      "/products/1-inch-led-digital-display-diy-clock-kit--blue----light-control-mcu-project-set-with-casing-2.webp"
+    ],
+    "category": "Components"
   },
   {
-    "id": "fly-sky-fs-i6x-24ghz-6ch-afhds-2a-rc-transmitter-with-fs-ia10b-24ghz-10ch-receiver",
-    "name": "Fly Sky FS-i6X 2.4GHz 6CH AFHDS 2A RC Transmitter With FS-iA10B 2.4GHz 10CH Receiver",
-    "price": 6399,
+    "id": "154-inch-e-ink-display-module-three-colour-200x200",
+    "name": "1.54 inch E-ink Display Module, three colour 200X200",
+    "price": 1289,
     "tags": [
       "electronics"
     ],
     "images": [
-      "/images/placeholder.png"
-    ]
+      "/products/1-54-inch-e-ink-display-module--three-colour-200x200-1.webp",
+      "/products/1-54-inch-e-ink-display-module--three-colour-200x200-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "101inch-hdmi-capacitive-touch-screen-lcd-e-1024600-supports-raspberry-pi",
+    "name": "10.1inch HDMI Capacitive Touch Screen LCD (E) 1024Ã—600 Supports Raspberry Pi",
+    "price": 9999,
+    "tags": [
+      "microcomputer"
+    ],
+    "images": [
+      "/products/10-1inch-hdmi-capacitive-touch-screen-lcd--e--1024--600-supports-raspberry-pi-1.webp",
+      "/products/10-1inch-hdmi-capacitive-touch-screen-lcd--e--1024--600-supports-raspberry-pi-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "100k-ohm-resistor-pack",
+    "name": "100K Ohm Resistor Pack",
+    "price": 10,
+    "tags": [
+      "resistor",
+      "electronics"
+    ],
+    "images": [
+      "/products/100k-ohm-resistor-pack-1.webp",
+      "/products/100k-ohm-resistor-pack-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "100k-potentiometer",
+    "name": "100K Potentiometer",
+    "price": 29,
+    "tags": [
+      "potentiometer",
+      "electronics"
+    ],
+    "images": [
+      "/products/100k-potentiometer-1.webp",
+      "/products/100k-potentiometer-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "10mm-bright-green-led-10pcs-pack",
+    "name": "10mm Bright Green LED - 10pcs Pack",
+    "price": 10,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/10mm-bright-green-led---10pcs-pack-1.webp",
+      "/products/10mm-bright-green-led---10pcs-pack-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "10mm-bright-yellow-led-10pcs-pack",
+    "name": "10mm Bright Yellow LED - 10pcs Pack",
+    "price": 10,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/10mm-bright-yellow-led---10pcs-pack-1.webp",
+      "/products/10mm-bright-yellow-led---10pcs-pack-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "10mm-spiral-wrapping-band-black-10m-for-wires",
+    "name": "10mm Spiral Wrapping Band Black 10M for Wires",
+    "price": 70,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/10mm-spiral-wrapping-band-black-10m-for-wire-1.webp",
+      "/products/10mm-spiral-wrapping-band-black-10m-for-wire-2.webp"
+    ],
+    "category": "Components"
   },
   {
     "id": "111v-4200mah-35c-3s1p-bonka-lipo-battery",
     "name": "11.1v 4200mAh 35C 3S1P Bonka LiPo Battery",
-    "price": 3349,
+    "price": 2999,
     "tags": [
       "electronics"
     ],
     "images": [
-      "/images/placeholder.png"
-    ]
+      "/products/11-1v-4200mah-35c-3s1p-bonka-lipo-battery-1.webp",
+      "/products/11-1v-4200mah-35c-3s1p-bonka-lipo-battery-2.webp"
+    ],
+    "category": "Components"
   },
   {
-    "id": "owon-mtq-1016b-analogue-oscilloscope-10-mhz-1-channel",
-    "name": "OWON MTQ 1016B Analogue Oscilloscope - 10 MHz 1 Channel",
-    "price": 10999,
+    "id": "12v-40w-ceramic-cartridge-heater",
+    "name": "12V 40W Ceramic Cartridge Heater",
+    "price": 79,
     "tags": [
       "electronics"
     ],
     "images": [
-      "http://robocraze.com/cdn/shop/files/New_A_Listing2.png?v=1762086991"
-    ]
+      "/products/12v-40w-ceramic-cartridge-heater-1.webp",
+      "/products/12v-40w-ceramic-cartridge-heater-2.webp"
+    ],
+    "category": "Components"
   },
   {
-    "id": "arduino-opla-iot-kit-akx00026",
-    "name": "Arduino Opla IoT Kit AKX00026",
-    "price": 12399,
+    "id": "16-channel-touch-switch-module",
+    "name": "16 Channel Touch Switch Module",
+    "price": 199,
     "tags": [
-      "microcontroller"
+      "switch",
+      "touch",
+      "module"
     ],
     "images": [
-      "http://robocraze.com/cdn/shop/files/TIFC00211.png?v=1761114587"
-    ]
+      "/products/16-channel-touch-switch-module-1.webp",
+      "/products/16-channel-touch-switch-module-2.webp"
+    ],
+    "category": "Components"
   },
   {
-    "id": "radiolink-rc6gs-v3-7ch-24ghz-rc-transmitter-and-7ch-r7fg-receiver-with-waterproof-gyro",
-    "name": "Radiolink RC6GS V3 7CH 2.4GHz RC Transmitter and 7CH R7FG Receiver with Waterproof Gyro",
-    "price": 9499,
+    "id": "1uf-capacitor",
+    "name": "1uF Capacitor",
+    "price": 20,
+    "tags": [
+      "capacitor",
+      "electronics"
+    ],
+    "images": [
+      "/products/1uf-capacitor-1.webp",
+      "/products/1uf-capacitor-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "2-channel-solid-state-relay",
+    "name": "2 Channel Solid State Relay",
+    "price": 139,
+    "tags": [
+      "relay",
+      "electronics"
+    ],
+    "images": [
+      "/products/2-channel-solid-state-relay-1.webp",
+      "/products/2-channel-solid-state-relay-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "24v-40w-ceramic-cartridge-heater-wire",
+    "name": "24V 40W Ceramic Cartridge Heater Wire",
+    "price": 99,
     "tags": [
       "electronics"
     ],
     "images": [
-      "/images/placeholder.png"
-    ]
+      "http://robocraze.com/cdn/shop/products/6-1.jpg?v=1743774965"
+    ],
+    "category": "Components"
   },
   {
-    "id": "anycubic-kobra-2-neo-3d-printer-eu-plug",
-    "name": "Anycubic Kobra 2 Neo 3D Printer - EU plug",
-    "price": 14899,
-    "tags": [
-      "electronics"
-    ],
+    "id": "stepper-motor",
+    "name": "28BYJ-48 Stepper Motor",
+    "price": 149,
+    "category": "Motors",
     "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "smartelex-basic-40-hmi-display-320480-tft-screen-with-resistive-touch-and-uart-interface",
-    "name": "SmartElex Basic 4.0″ HMI Display – 320×480 TFT Screen with Resistive Touch and UART Interface",
-    "price": 2006,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "esun-175mm-1kg-pla-3d-printing-filament-magenta-color",
-    "name": "eSun 1.75mm 1kg PLA+ 3D Printing Filament Magenta Color",
-    "price": 1290,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "3-in-1-acebott-esp32-stem-school-smart-home-education-kit-level-1-qe023",
-    "name": "3-In-1 ACEBOTT ESP32 STEM School Smart Home Education Kit - Level 1 QE023",
-    "price": 7899,
-    "tags": [
-      "kit"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "elecrow-crowbits-master-kit-with-3-fully-functional-products-stem-programming-educational-building",
-    "name": "Elecrow - Crowbits-Master Kit with 3 fully functional products, STEM Programming Educational Building",
-    "price": 13499,
-    "tags": [
-      "kit"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/files/33_8c316e31-aa92-4c04-b316-c0aa9070a253.png?v=1761914865"
-    ]
-  },
-  {
-    "id": "original-diy-paper-foldscope-microscope-basic-kit",
-    "name": "Original DIY Paper Foldscope Microscope Basic Kit",
-    "price": 449,
-    "tags": [
-      "kit"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "diy-4-wheel-drive-solar-powered-wooden-car-kit",
-    "name": "DIY 4 Wheel Drive Solar Powered Wooden Car Kit",
-    "price": 133,
-    "tags": [
-      "kit"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/41srymzxs5l_1.jpg?v=1743775434"
-    ]
-  },
-  {
-    "id": "diy-mini-battery-powered-4-wheel-drive-car",
-    "name": "DIY Mini Battery Powered 4 Wheel Drive Car",
-    "price": 399,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/files/Products_79_beaffe15-82d0-47a0-b40c-949c8f02dcfa.png?v=1752210744"
-    ]
-  },
-  {
-    "id": "3-in-1-educational-diy-solar-robot-kit",
-    "name": "3 in 1 Educational DIY Solar Robot Kit",
-    "price": 349,
-    "tags": [
-      "kit"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/files/36.png?v=1743773460"
-    ]
-  },
-  {
-    "id": "diy-creeping-tiny-gecko",
-    "name": "DIY Creeping Tiny Gecko",
-    "price": 345,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/122.jpg?v=1743774314"
-    ]
-  },
-  {
-    "id": "spider-robot-insect-fun-toy",
-    "name": "Spider Robot Insect Fun Toy",
-    "price": 349,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/41xumEtmd8L.jpg?v=1743774299"
-    ]
-  },
-  {
-    "id": "acebott-qd021-bionic-biped-robot-kit-for-arduino-esp32-electronic-toy-programming",
-    "name": "ACEBOTT QD021 Bionic Biped Robot Kit for Arduino ESP32 - Electronic Toy Programming",
-    "price": 3999,
-    "tags": [
-      "microcontroller"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "smartelex-bharat-ai-innovators-kit-powered-by-arduino-for-stem-learning",
-    "name": "SmartElex Bharat AI Innovators Kit Powered by Arduino for STEM Learning",
-    "price": 2799,
-    "tags": [
-      "microcontroller"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/files/SmartElex_Bharat_AI_Innovators_Kit_Powered_by_Arduino_for_STEM_Learning.png?v=1758696026"
-    ]
-  },
-  {
-    "id": "elecrow-esp32-terminal-35-inch-480320-spi-tft-capacitive-touch-display-with-ov2640-camera",
-    "name": "ELECROW ESP32 Terminal- 3.5 inch 480×320 SPI TFT capacitive touch display with OV2640 camera",
-    "price": 4749,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "acebott-qe032-truckbott-smart-car-kit-with-esp32-controller-supports-arduino-acecode-python-stem-classroom-home-education-year-5-level-2",
-    "name": "ACEBOTT QE032 TruckBott Smart Car Kit with ESP32 Controller Supports Arduino, ACECode & Python | STEM Classroom & Home Education – Year 5 Level 2",
-    "price": 10499,
-    "tags": [
-      "microcontroller"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/files/ACEBOTT_QE032_TruckBott_Smart_Car_Kit_with_ESP32_Controller_Supports_Arduino_ACECode_Python_STEM_Classroom_Home_Education_Year_5_Level_2.png?v=1759306332"
-    ]
-  },
-  {
-    "id": "acebott-qe011-esp32-iot-weather-station-starter-stem-kit-compatible-with-arduino",
-    "name": "ACEBOTT QE011 ESP32 IOT Weather Station Starter STEM Kit Compatible with Arduino",
-    "price": 8785,
-    "tags": [
-      "microcontroller"
-    ],
-    "images": [
-      "/images/placeholder.png"
+      "/products/28byj-48-stepper-motor-1.webp",
+      "/products/28byj-48-stepper-motor-2.webp"
     ]
   },
   {
@@ -272,523 +205,42 @@
     ],
     "images": [
       "http://robocraze.com/cdn/shop/products/2WD_Robot_Car_Chassis_Kit.jpg?v=1739433891"
-    ]
+    ],
+    "category": "Components"
   },
   {
-    "id": "solar-powered-black-cockroach-bug-toy",
-    "name": "Solar powered Black Cockroach Bug Toy",
-    "price": 199,
+    "id": "3-in-1-educational-diy-solar-robot-kit",
+    "name": "3 in 1 Educational DIY Solar Robot Kit",
+    "price": 349,
     "tags": [
-      "electronics"
+      "kit"
     ],
     "images": [
-      "http://robocraze.com/cdn/shop/products/Capture_04c008c0-890b-4302-a51d-6295ae0ea9b7.png?v=1743774300"
-    ]
+      "http://robocraze.com/cdn/shop/files/36.png?v=1743773460"
+    ],
+    "category": "Components"
   },
   {
-    "id": "diy-educational-electric-reptile-robot-for-science-experiment",
-    "name": "DIY Educational Electric Reptile Robot for Science Experiment",
-    "price": 244,
+    "id": "3-in-1-acebott-esp32-stem-school-smart-home-education-kit-level-1-qe023",
+    "name": "3-In-1 ACEBOTT ESP32 STEM School Smart Home Education Kit - Level 1 QE023",
+    "price": 7899,
     "tags": [
-      "electronics"
+      "kit"
     ],
     "images": [
-      "/images/placeholder.png"
-    ]
+      "/products/3-in-1-acebott-esp32-stem-school-smart-home-education-kit---level-1-qe023-1.webp",
+      "/products/3-in-1-acebott-esp32-stem-school-smart-home-education-kit---level-1-qe023-2.webp"
+    ],
+    "category": "Components"
   },
   {
-    "id": "diy-battery-powered-mini-metal-tank",
-    "name": "DIY Battery Powered Mini Metal Tank",
-    "price": 269,
-    "tags": [
-      "electronics"
-    ],
+    "id": "tft-display",
+    "name": "3.2 inch TFT LCD Display",
+    "price": 1313,
+    "category": "Displays",
     "images": [
-      "http://robocraze.com/cdn/shop/products/5.jpg?v=1754052260"
-    ]
-  },
-  {
-    "id": "helping-hand-magnifier-led-glass-with-soldering-stand",
-    "name": "Helping hand Magnifier Led Glass with Soldering Stand",
-    "price": 489,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/3.png?v=1743773539"
-    ]
-  },
-  {
-    "id": "robocraze-epoxy-coated-tweezer-no9-anti-magnetic-stainless-steel",
-    "name": "Robocraze Epoxy Coated Tweezer no.9 Anti-Magnetic Stainless Steel",
-    "price": 35,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "noel-soldering-flux-paste-10gm-pack-yellow",
-    "name": "Noel Soldering Flux Paste 10gm Pack - Yellow",
-    "price": 26,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/files/Noel_Solder_Flux_10gm_Pack_Yellow.png?v=1745838124"
-    ]
-  },
-  {
-    "id": "noel-pure-copper-desoldering-wickwire",
-    "name": "Noel Pure Copper Desoldering Wick/Wire",
-    "price": 40,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "noel-12v-dc-micro-soldering-iron-pen",
-    "name": "Noel 12V DC Micro Soldering Iron Pen",
-    "price": 129,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/files/Noel_12V_DC_Micro_Soldering_Iron_Pen.png?v=1745828339"
-    ]
-  },
-  {
-    "id": "soldering-iron-25w-gold-with-advanced-heating-element",
-    "name": "Soldering Iron 25W Gold with Advanced Heating Element",
-    "price": 229,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/files/Soldering_Iron_25W_Gold.png?v=1745823216"
-    ]
-  },
-  {
-    "id": "noel-25-watt-soldering-iron-with-led-power-indicator-model-super",
-    "name": "Noel 25 Watt Soldering Iron with LED Power Indicator Model-Super",
-    "price": 123,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "noel-12v-micro-soldering-station",
-    "name": "Noel 12V Micro Soldering Station",
-    "price": 516,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/files/Noel_12V_Micro_Soldering_Station_b9960496-2d46-4a50-b38f-e5c66740a65b.png?v=1752208163"
-    ]
-  },
-  {
-    "id": "usb-charger-doctor-for-voltmeter-and-ammeter",
-    "name": "USB Charger Doctor for Voltmeter and Ammeter",
-    "price": 105,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/53.png?v=1743775372"
-    ]
-  },
-  {
-    "id": "10mm-bright-green-led-10pcs-pack",
-    "name": "10mm Bright Green LED - 10pcs Pack",
-    "price": 50,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/files/10mm_Green_LED_3_fd10bbce-1152-4901-9119-d6094ce407fa.png?v=1752208821"
-    ]
-  },
-  {
-    "id": "10mm-bright-yellow-led-10pcs-pack",
-    "name": "10mm Bright Yellow LED - 10pcs Pack",
-    "price": 50,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/files/Products_3_001638d5-0d7e-40d5-83ad-57c8dbbbfe03.png?v=1752208828"
-    ]
-  },
-  {
-    "id": "atmega8",
-    "name": "ATmega8",
-    "price": 189,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/atmega8.jpg?v=1743775823"
-    ]
-  },
-  {
-    "id": "waveshare-modbus-rtu-8-channel-relay-module-rs485",
-    "name": "Waveshare Modbus RTU 8 Channel Relay Module RS485",
-    "price": 2849,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "multifunction-delay-relay-switch-module",
-    "name": "Multifunction Delay Relay Switch Module",
-    "price": 447,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/WhatsApp_Image_2021-09-08_at_1.15.01_PM__1_-removebg-preview.png?v=1743774390"
-    ]
-  },
-  {
-    "id": "motorola-sn74ls48n-ic-bcd-to-7-segment-decoder",
-    "name": "Motorola SN74LS48N IC BCD TO 7-Segment Decoder",
-    "price": 26,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "atmega128",
-    "name": "ATmega128",
-    "price": 399,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/d155f8datmega128-16au.jpg?v=1743775768"
-    ]
-  },
-  {
-    "id": "multitec-mt-535-nose-plier",
-    "name": "Multitec MT-535 Nose Plier",
-    "price": 196,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/MultitecMT-535NosePlier-Robocraze.png?v=1743773869"
-    ]
-  },
-  {
-    "id": "multitec-mt-02dx-stripper",
-    "name": "Multitec MT-02DX+ Stripper",
-    "price": 309,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/2_9ef9c452-b961-48bc-af5a-2404d332dcee.png?v=1743773880"
-    ]
-  },
-  {
-    "id": "toyo-plcc-ic-extractor",
-    "name": "Toyo PLCC IC Extractor",
-    "price": 194,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "multitec-mt-555-plier-8",
-    "name": "Multitec MT-555 Plier 8",
-    "price": 218,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/2_a1883ffe-6742-4c43-985a-fbda9d73134f.png?v=1743773866"
-    ]
-  },
-  {
-    "id": "m4-hammer-drop-in-t-nut-m4106-tpack-of-10",
-    "name": "M4 Hammer Drop-In T Nut ( M4*10*6 T)(Pack of 10)",
-    "price": 155,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "hammer-drop-in-t-nut-m5106-tpack-of-10",
-    "name": "Hammer Drop-In T Nut ( M5*10*6 T)(Pack of 10)",
-    "price": 129,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "hammer-drop-in-t-nut-m3106-tpack-of-10",
-    "name": "Hammer Drop-In T Nut ( M3*10*6 T)(Pack of 10)",
-    "price": 132,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "12v-40w-ceramic-cartridge-heater",
-    "name": "12V 40W Ceramic Cartridge Heater",
-    "price": 89,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/511qjevranl._sx342.jpg?v=1743775559"
-    ]
-  },
-  {
-    "id": "rp203-58mm-panel-thermal-printer",
-    "name": "RP203 58mm Panel Thermal Printer",
-    "price": 1749,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/ccbb2438917474a37fcb8d74b0f8833c_medium_871a1de3-01df-4f63-9285-1953556cabc9.jpg?v=1743774578"
-    ]
-  },
-  {
-    "id": "3d-printer-ramps-14-shield",
-    "name": "3D Printer Ramps 1.4 Shield",
-    "price": 279,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "5mm-to-5mm-flexible-couplings",
-    "name": "5mm to 5mm Flexible Couplings",
-    "price": 65,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/41nrjhiwtkl._sl1000.jpg?v=1743774961"
-    ]
-  },
-  {
-    "id": "3d-touch-auto-leveling-sensor-for-3d-printers",
-    "name": "3D Touch Auto Leveling Sensor for 3D printers",
-    "price": 849,
-    "tags": [
-      "sensor"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/1_640e11f7-c44d-4bc3-a56d-d7f29307c2ea.png?v=1743774000"
-    ]
-  },
-  {
-    "id": "aluminium-heatsink-19mmx19mmx15mm-silver-tone",
-    "name": "Aluminium Heatsink 19mmx19mmx15mm Silver Tone",
-    "price": 13,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "10mm-spiral-wrapping-band-black-10m-for-wires",
-    "name": "10mm Spiral Wrapping Band Black 10M for Wires",
-    "price": 94,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/5_3599b917-90d1-45e6-8920-95e69f5d0cfa.png?v=1744280806"
-    ]
-  },
-  {
-    "id": "3d-printer-parts-spring-for-heated-bed-mk3-cr-10-hotbed-yellow",
-    "name": "3D Printer Parts Spring For Heated bed MK3 CR-10 Hotbed (Yellow)",
-    "price": 24,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/1_77064a8f-7299-49eb-9fba-d75a70e917b8.png?v=1744280848"
-    ]
-  },
-  {
-    "id": "24v-40w-ceramic-cartridge-heater-wire",
-    "name": "24V 40W Ceramic Cartridge Heater Wire",
-    "price": 99,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/6-1.jpg?v=1743774965"
-    ]
-  },
-  {
-    "id": "3d-printer-128x64-smart-lcd-display-controller-for-ramps-14",
-    "name": "3D Printer 128x64 Smart LCD Display Controller for RAMPS 1.4",
-    "price": 792,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "mk2b-3d-printer-pcb-heat-bed-214-mm",
-    "name": "MK2B 3D Printer PCB Heat Bed - 214 mm",
-    "price": 550,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/618fuojugnl._sl1000.jpg?v=1743774966"
-    ]
-  },
-  {
-    "id": "3d-printer-lcd-2004-graphic-smart-display",
-    "name": "3D Printer - LCD 2004 Graphic Smart Display",
-    "price": 549,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/51chnl7tbhl._sl1000.jpg?v=1743774963"
-    ]
-  },
-  {
-    "id": "3d-printer-parts-heating-controller-mks-mos25-v10-for-heat-bed-extruder-mos-module-support-big-current-25a",
-    "name": "3D printer parts heating-controller MKS MOS25 V1.0 for heat bed extruder MOS module support big current 25A",
-    "price": 159,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "surface-thermocouple-k-type-high-temperature-resistance-probe-1-meter",
-    "name": "Surface Thermocouple K Type High Temperature Resistance Probe (1 Meter)",
-    "price": 44,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/Ktypethermocouple.png?v=1743773993"
-    ]
-  },
-  {
-    "id": "k-type-patch-surface-end-face-thermocouple-cold-pressure-nose-probe-pt100-temperature-sensor-smd-round-hole-temperature-probe-1-meter",
-    "name": "K Type Patch Surface End Face Thermocouple Cold Pressure Nose Probe PT100 Temperature Sensor SMD Round Hole Temperature Probe (1 Meter)",
-    "price": 109,
-    "tags": [
-      "sensor"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "k-type-thermocouple-sensor-probe-0-800-degree-c",
-    "name": "K Type Thermocouple Sensor Probe 0-800 degree C",
-    "price": 56,
-    "tags": [
-      "sensor"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/files/1_50870675-e243-459c-ade0-b44617956778.png?v=1743772894"
-    ]
-  },
-  {
-    "id": "pt100-m6-screw-probe-thermocouple-temperature-sensor-1-meter",
-    "name": "PT100  M6 Screw Probe Thermocouple Temperature Sensor (1 Meter)",
-    "price": 140,
-    "tags": [
-      "sensor"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/1_a7170653-8bed-4c0d-9819-b276728bffd1.png?v=1743773991"
-    ]
-  },
-  {
-    "id": "3d-printer-power-controller-module-for-heated-bed",
-    "name": "3D Printer Power Controller Module for Heated Bed",
-    "price": 139,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/products/4_d429744d-4529-494b-a7ca-6faeb5267942.png?v=1744280862"
-    ]
-  },
-  {
-    "id": "k-type-temperature-thermocouple-1-meter",
-    "name": "K-type Temperature Thermocouple (1 Meter)",
-    "price": 134,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "http://robocraze.com/cdn/shop/files/93_525a1008-2fa2-4707-b071-a19dc267e5e0.png?v=1743773718"
-    ]
-  },
-  {
-    "id": "k-type-thermocouple-probe-temperature-sensor-6mm-thread-1m-33ft",
-    "name": "K Type Thermocouple Probe Temperature Sensor 6mm Thread 1M 3.3Ft",
-    "price": 89,
-    "tags": [
-      "sensor"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "154-inch-e-ink-display-module-three-colour-200x200",
-    "name": "1.54 inch E-ink Display Module, three colour 200X200",
-    "price": 1289,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
+      "/products/3-2-inch-tft-lcd-display-1.webp",
+      "/products/3-2-inch-tft-lcd-display-2.webp"
     ]
   },
   {
@@ -799,51 +251,194 @@
       "microcontroller"
     ],
     "images": [
-      "/images/placeholder.png"
-    ]
+      "/products/3-2-inch-tft-lcd-resistive-touch-screen-panel-with-spi-interface-for-arduino-mega-1.webp",
+      "/products/3-2-inch-tft-lcd-resistive-touch-screen-panel-with-spi-interface-for-arduino-mega-2.webp"
+    ],
+    "category": "Components"
   },
   {
-    "id": "7-official-raspberry-pi-touch-display-2",
-    "name": "7'' Official Raspberry Pi Touch Display 2",
-    "price": 7354,
+    "id": "330-ohm-resistor-pack",
+    "name": "330 Ohm Resistor Pack",
+    "price": 10,
     "tags": [
-      "microcomputer"
+      "resistor",
+      "electronics"
     ],
     "images": [
-      "http://robocraze.com/cdn/shop/files/1_b751c69b-ae21-45fc-83c6-a33c4f11823a.png?v=1743772811"
-    ]
+      "/products/330-ohm-resistor-pack-1.webp",
+      "/products/330-ohm-resistor-pack-2.webp"
+    ],
+    "category": "Components"
   },
   {
-    "id": "original-jhd-20x4-character-lcd-display",
-    "name": "Original JHD 20x4 Character LCD Display",
-    "price": 339,
+    "id": "3d-printer-lcd-2004-graphic-smart-display",
+    "name": "3D Printer - LCD 2004 Graphic Smart Display",
+    "price": 549,
     "tags": [
       "electronics"
     ],
     "images": [
-      "http://robocraze.com/cdn/shop/files/JHD-204A-Green-Yellow-Roboticsdna.jpg?v=1743773287"
-    ]
+      "/products/3d-printer---lcd-2004-graphic-smart-display-1.webp",
+      "/products/3d-printer---lcd-2004-graphic-smart-display-2.webp"
+    ],
+    "category": "Components"
   },
   {
-    "id": "7-segment-led-display-common-cathode",
-    "name": "7 Segment Led Display (Common Cathode)",
-    "price": 8,
+    "id": "3d-printer-128x64-smart-lcd-display-controller-for-ramps-14",
+    "name": "3D Printer 128x64 Smart LCD Display Controller for RAMPS 1.4",
+    "price": 792,
     "tags": [
       "electronics"
     ],
     "images": [
-      "http://robocraze.com/cdn/shop/files/347.png?v=1743775830"
+      "/products/3d-printer-128x64-smart-lcd-display-controller-for-ramps-1-4-1.webp",
+      "/products/3d-printer-128x64-smart-lcd-display-controller-for-ramps-1-4-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "3d-printer-parts-heating-controller-mks-mos25-v10-for-heat-bed-extruder-mos-module-support-big-current-25a",
+    "name": "3D printer parts heating-controller MKS MOS25 V1.0 for heat bed extruder MOS module support big current 25A",
+    "price": 159,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/3d-printer-parts-heating-controller-mks-mos25-v1-0-for-heat-bed-extruder-mos-module-support-big-current-25a-1.webp",
+      "/products/3d-printer-parts-heating-controller-mks-mos25-v1-0-for-heat-bed-extruder-mos-module-support-big-current-25a-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "3d-printer-spring-hotbed",
+    "name": "3D Printer Parts Spring For Heated Bed",
+    "price": 19,
+    "category": "3D Printing",
+    "images": [
+      "/products/3d-printer-spring-for-heated-bed-1.webp",
+      "/products/3d-printer-spring-for-heated-bed-2.webp",
+      "/products/3d-printer-spring-for-heated-bed-3.webp"
     ]
   },
   {
-    "id": "key-display-for-avr-arduino-new-8-bit-digital-led-tube-8-bit-tm1638-module",
-    "name": "Key Display For AVR Arduino New 8-Bit Digital LED Tube 8-Bit TM1638 Module",
+    "id": "3d-printer-parts-spring-for-heated-bed-mk3-cr-10-hotbed-yellow",
+    "name": "3D Printer Parts Spring For Heated bed MK3 CR-10 Hotbed (Yellow)",
+    "price": 24,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/3d-printer-parts-spring-for-heated-bed-mk3-cr-10-hotbed--yellow--1.webp",
+      "/products/3d-printer-parts-spring-for-heated-bed-mk3-cr-10-hotbed--yellow--2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "3d-printer-power-controller-module-for-heated-bed",
+    "name": "3D Printer Power Controller Module for Heated Bed",
+    "price": 139,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/3d-printer-power-controller-module-for-heated-bed-1.webp",
+      "/products/3d-printer-power-controller-module-for-heated-bed-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "3d-printer-ramps-14-adapter-lcd2004-module12864-control-panel-adapter-display",
+    "name": "3D Printer Ramps 1.4 Adapter LCD2004 Module/12864 Control Panel Adapter Display",
+    "price": 76,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/3d-printer-ramps-1-4-adapter-lcd2004-module-12864-control-panel-adapter-display-1.webp",
+      "/products/3d-printer-ramps-1-4-adapter-lcd2004-module-12864-control-panel-adapter-display-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "3d-printer-ramps-14-shield",
+    "name": "3D Printer Ramps 1.4 Shield",
     "price": 279,
     "tags": [
-      "microcontroller"
+      "electronics"
     ],
     "images": [
-      "http://robocraze.com/cdn/shop/products/71tubt0nwrl._sl1500.jpg?v=1744280864"
+      "/products/3d-printer-ramps-1-4-shield-1.webp",
+      "/products/3d-printer-ramps-1-4-shield-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "3d-touch-auto-leveling-sensor-for-3d-printers",
+    "name": "3D Touch Auto Leveling Sensor for 3D printers",
+    "price": 749,
+    "tags": [
+      "sensor"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/1_640e11f7-c44d-4bc3-a56d-d7f29307c2ea.png?v=1743774000"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "4-7k-ohm-resistor-pack",
+    "name": "4.7K Ohm Resistor Pack",
+    "price": 10,
+    "tags": [
+      "resistor",
+      "electronics"
+    ],
+    "images": [
+      "/products/4-7k-ohm-resistor-pack-1.webp",
+      "/products/4-7k-ohm-resistor-pack-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "470uf-electrolytic-capacitor",
+    "name": "470uF Electrolytic Capacitor",
+    "price": 39,
+    "tags": [
+      "capacitor",
+      "electronics"
+    ],
+    "images": [
+      "/products/470uf-electrolytic-capacitor-1.webp",
+      "/products/470uf-electrolytic-capacitor-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "thermal-printer",
+    "name": "58mm Thermal Printer",
+    "price": 1749,
+    "category": "Modules",
+    "images": [
+      "/products/58mm-thermal-printer-2.webp"
+    ]
+  },
+  {
+    "id": "flexible-coupling",
+    "name": "5mm to 5mm Flexible Couplings",
+    "price": 65,
+    "category": "Components",
+    "images": [
+      "/products/5mm-to-5mm-flexible-couplings-1.webp",
+      "/products/5mm-to-5mm-flexible-couplings-2.webp"
+    ]
+  },
+  {
+    "id": "relay-module",
+    "name": "5V Relay Module",
+    "price": 69,
+    "category": "Modules",
+    "images": [
+      "/products/5v-relay-module-single-channel-1.webp",
+      "/products/5v-relay-module-single-channel-2.webp"
     ]
   },
   {
@@ -855,50 +450,255 @@
     ],
     "images": [
       "http://robocraze.com/cdn/shop/products/1_7811ec36-43d9-42ea-9a82-644a977f6b89.jpg?v=1743775832"
-    ]
+    ],
+    "category": "Components"
   },
   {
-    "id": "tm1637-4-digit-7-segment-led-display",
-    "name": "TM1637 4 Digit 7 Segment LED Display",
-    "price": 50,
+    "id": "7-segment-led-display-common-cathode",
+    "name": "7 Segment Led Display (Common Cathode)",
+    "price": 9,
     "tags": [
       "electronics"
     ],
     "images": [
-      "http://robocraze.com/cdn/shop/products/46.png?v=1743775571"
+      "http://robocraze.com/cdn/shop/files/347.png?v=1743775830"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "7-official-raspberry-pi-touch-display-2",
+    "name": "7'' Official Raspberry Pi Touch Display 2",
+    "price": 7354,
+    "tags": [
+      "microcomputer"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/files/1_b751c69b-ae21-45fc-83c6-a33c4f11823a.png?v=1743772811"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "acebott-esp32-kit",
+    "name": "ACEBOTT ESP32 Smart Kit",
+    "price": 7899,
+    "category": "Kits",
+    "images": [
+      "/products/acebott-esp32-smart-kit-2.webp"
     ]
   },
   {
-    "id": "tm1637-4-digit-display-ir-proximity-sensor",
-    "name": "TM1637 4-Digit Display + IR Proximity Sensor",
-    "price": 102,
+    "id": "acebott-qd021-bionic-biped-robot-kit-for-arduino-esp32-electronic-toy-programming",
+    "name": "ACEBOTT QD021 Bionic Biped Robot Kit for Arduino ESP32 - Electronic Toy Programming",
+    "price": 3999,
     "tags": [
-      "sensor"
+      "microcontroller"
     ],
     "images": [
-      "http://robocraze.com/cdn/shop/products/untitled_design_36.jpg?v=1743775012"
+      "/products/acebott-qd021-bionic-biped-robot-kit--1.webp",
+      "/products/acebott-qd021-bionic-biped-robot-kit--2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "acebott-qe011-esp32-iot-weather-station-starter-stem-kit-compatible-with-arduino",
+    "name": "ACEBOTT QE011 ESP32 IOT Weather Station Starter STEM Kit Compatible with Arduino",
+    "price": 8785,
+    "tags": [
+      "microcontroller"
+    ],
+    "images": [
+      "/products/acebott-qe011-esp32-iot-weather-station-starter-stem-kit-compatible-with-arduino-1.webp",
+      "/products/acebott-qe011-esp32-iot-weather-station-starter-stem-kit-compatible-with-arduino-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "acebott-qe032-truckbott-smart-car-kit-with-esp32-controller-supports-arduino-acecode-python-stem-classroom-home-education-year-5-level-2",
+    "name": "ACEBOTT QE032 TruckBott Smart Car Kit with ESP32 Controller Supports Arduino, ACECode & Python | STEM Classroom & Home Education – Year 5 Level 2",
+    "price": 10499,
+    "tags": [
+      "microcontroller"
+    ],
+    "images": [
+      "/products/acebott-qe032-truckbott-smart-car-kit-with-esp32-controller-supports-arduino--acecode---python---stem-classroom---home-education---year-5-level-2-1.webp",
+      "/products/acebott-qe032-truckbott-smart-car-kit-with-esp32-controller-supports-arduino--acecode---python---stem-classroom---home-education---year-5-level-2-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "aluminium-heatsink-19mmx19mmx15mm-silver-tone",
+    "name": "Aluminium Heatsink 19mmx19mmx15mm Silver Tone",
+    "price": 13,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/aluminium-heatsink-19mmx19mmx15mm-silver-tone-1.webp",
+      "/products/aluminium-heatsink-19mmx19mmx15mm-silver-tone-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "anti-magnetic-tweezer",
+    "name": "Anti Magnetic Tweezer No.9",
+    "price": 37,
+    "category": "Tools",
+    "images": [
+      "/products/anti-magnetic-tweezer-no-9-1.webp",
+      "/products/anti-magnetic-tweezer-no-9-2.webp"
     ]
   },
   {
-    "id": "1-inch-led-digital-display-diy-clock-kit-blue-light-control-mcu-project-set-with-casing",
-    "name": "1-Inch LED Digital Display DIY Clock Kit (Blue) – Light-Control MCU Project Set with Casing",
-    "price": 699,
-    "tags": [
-      "kit"
-    ],
+    "id": "anycubic-printer",
+    "name": "Anycubic Kobra 2 Neo 3D Printer",
+    "price": 14899,
+    "category": "3D Printing",
     "images": [
-      "/images/placeholder.png"
+      "/products/anycubic-kobra-2-neo-3d-printer-1.webp",
+      "/products/anycubic-kobra-2-neo-3d-printer-2.webp"
     ]
   },
   {
-    "id": "diy-51-mcu-electronic-clock-kit-red-1-light-control-led-display-with-assembly-case-for-stem-projects",
-    "name": "DIY 51 MCU Electronic Clock Kit (Red) – 1\" Light-Control LED Display with Assembly Case for STEM Projects",
-    "price": 699,
+    "id": "anycubic-kobra-2-neo-3d-printer-eu-plug",
+    "name": "Anycubic Kobra 2 Neo 3D Printer - EU plug",
+    "price": 14899,
     "tags": [
-      "kit"
+      "electronics"
     ],
     "images": [
-      "/images/placeholder.png"
+      "/products/anycubic-kobra-2-neo-3d-printer---eu-plug-1.webp",
+      "/products/anycubic-kobra-2-neo-3d-printer---eu-plug-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "arduino-due",
+    "name": "Arduino Due",
+    "price": 1199,
+    "tags": [
+      "arduino",
+      "microcontroller"
+    ],
+    "images": [
+      "/products/arduino-due-1.webp",
+      "/products/arduino-due-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "arduino-lilypad",
+    "name": "Arduino LilyPad",
+    "price": 599,
+    "tags": [
+      "arduino",
+      "wearable"
+    ],
+    "images": [
+      "/products/arduino-lilypad-1.webp",
+      "/products/arduino-lilypad-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "arduino-micro",
+    "name": "Arduino Micro",
+    "price": 649,
+    "tags": [
+      "arduino",
+      "microcontroller"
+    ],
+    "images": [
+      "/products/arduino-micro-1.webp",
+      "/products/arduino-micro-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "arduino-nano",
+    "name": "Arduino Nano",
+    "price": 249,
+    "category": "Arduino",
+    "images": [
+      "/products/arduino-nano-3.webp"
+    ]
+  },
+  {
+    "id": "arduino-opla-kit",
+    "name": "Arduino Opla IoT Kit",
+    "price": 12399,
+    "category": "Arduino",
+    "images": [
+      "/products/arduino-opla-iot-kit-1.webp",
+      "/products/arduino-opla-iot-kit-2.webp"
+    ]
+  },
+  {
+    "id": "arduino-opla-iot-kit-akx00026",
+    "name": "Arduino Opla IoT Kit AKX00026",
+    "price": 12399,
+    "tags": [
+      "microcontroller"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/files/TIFC00211.png?v=1761114587"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "arduino-uno",
+    "name": "Arduino Uno R3",
+    "price": 399,
+    "category": "Arduino",
+    "images": [
+      "/products/arduino-uno-r3-1.webp",
+      "/products/arduino-uno-r3-2.webp"
+    ]
+  },
+  {
+    "id": "atmega128",
+    "name": "ATmega128",
+    "price": 399,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/d155f8datmega128-16au.jpg?v=1743775768"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "atmega8",
+    "name": "ATmega8",
+    "price": 189,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/atmega8.jpg?v=1743775823"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "bambu-lab-35-inch-ips-capacitive-touchscreen-for-a1",
+    "name": "Bambu Lab 3.5-inch IPS Capacitive Touchscreen for A1",
+    "price": 3279,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/bambu-lab-3-5-inch-ips-capacitive-touchscreen-for-a1-1.webp",
+      "/products/bambu-lab-3-5-inch-ips-capacitive-touchscreen-for-a1-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "dht11-sensor",
+    "name": "DHT11 Sensor",
+    "price": 69,
+    "category": "Sensors",
+    "images": [
+      "/products/dht11-sensor-1.webp",
+      "/products/dht11-sensor-2.webp"
     ]
   },
   {
@@ -909,30 +709,1112 @@
       "kit"
     ],
     "images": [
-      "/images/placeholder.png"
-    ]
+      "/products/diy-1-inch-led-electronic-clock-kit--white----light-control-mcu-display-set-with-enclosure-1.jpg",
+      "/products/diy-1-inch-led-electronic-clock-kit--white----light-control-mcu-display-set-with-enclosure-2.jpg"
+    ],
+    "category": "Components"
   },
   {
-    "id": "3d-printer-ramps-14-adapter-lcd2004-module12864-control-panel-adapter-display",
-    "name": "3D Printer Ramps 1.4 Adapter LCD2004 Module/12864 Control Panel Adapter Display",
-    "price": 76,
+    "id": "diy-4-wheel-drive-solar-powered-wooden-car-kit",
+    "name": "DIY 4 Wheel Drive Solar Powered Wooden Car Kit",
+    "price": 133,
+    "tags": [
+      "kit"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/41srymzxs5l_1.jpg?v=1743775434"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "diy-51-mcu-electronic-clock-kit-red-1-light-control-led-display-with-assembly-case-for-stem-projects",
+    "name": "DIY 51 MCU Electronic Clock Kit (Red) – 1\" Light-Control LED Display with Assembly Case for STEM Projects",
+    "price": 699,
+    "tags": [
+      "kit"
+    ],
+    "images": [
+      "/products/diy-51-mcu-electronic-clock-kit--red----1--light-control-led-display-with-assembly-case-for-stem-projects-1.jpg",
+      "/products/diy-51-mcu-electronic-clock-kit--red----1--light-control-led-display-with-assembly-case-for-stem-projects-2.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "diy-battery-powered-mini-metal-tank",
+    "name": "DIY Battery Powered Mini Metal Tank",
+    "price": 269,
     "tags": [
       "electronics"
     ],
     "images": [
-      "/images/placeholder.png"
-    ]
+      "http://robocraze.com/cdn/shop/products/5.jpg?v=1754052260"
+    ],
+    "category": "Components"
   },
   {
-    "id": "bambu-lab-35-inch-ips-capacitive-touchscreen-for-a1",
-    "name": "Bambu Lab 3.5-inch IPS Capacitive Touchscreen for A1",
-    "price": 3279,
+    "id": "diy-creeping-tiny-gecko",
+    "name": "DIY Creeping Tiny Gecko",
+    "price": 345,
     "tags": [
       "electronics"
     ],
     "images": [
-      "/images/placeholder.png"
+      "http://robocraze.com/cdn/shop/products/122.jpg?v=1743774314"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "diy-educational-electric-reptile-robot-for-science-experiment",
+    "name": "DIY Educational Electric Reptile Robot for Science Experiment",
+    "price": 244,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/diy-educational-electric-reptile-robot-for-science-experiment-1.jpg",
+      "/products/diy-educational-electric-reptile-robot-for-science-experiment-2.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "diy-mini-battery-powered-4-wheel-drive-car",
+    "name": "DIY Mini Battery Powered 4 Wheel Drive Car",
+    "price": 399,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/files/Products_79_beaffe15-82d0-47a0-b40c-949c8f02dcfa.png?v=1752210744"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "solar-car-kit",
+    "name": "DIY Solar Car Kit",
+    "price": 133,
+    "category": "Kits",
+    "images": [
+      "/products/diy-solar-car-kit-1.webp",
+      "/products/diy-solar-car-kit-2.webp"
     ]
+  },
+  {
+    "id": "drone-flight-controller-kit",
+    "name": "Drone Flight Controller Kit",
+    "price": 1899,
+    "tags": [
+      "drone",
+      "controller",
+      "kit"
+    ],
+    "images": [
+      "/products/mini-pix-1.webp",
+      "/products/mini-pix-3.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "drone-landing-gear-kit",
+    "name": "Drone Landing Gear Kit",
+    "price": 349,
+    "tags": [
+      "drone",
+      "kit",
+      "accessory"
+    ],
+    "images": [
+      "/products/drone-landing-gear-kit-1.webp",
+      "/products/drone-landing-gear-kit-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "elecrow-crowbits-master-kit-with-3-fully-functional-products-stem-programming-educational-building",
+    "name": "Elecrow - Crowbits-Master Kit with 3 fully functional products, STEM Programming Educational Building",
+    "price": 13499,
+    "tags": [
+      "kit"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/files/33_8c316e31-aa92-4c04-b316-c0aa9070a253.png?v=1761914865"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "elecrow-esp32-terminal-35-inch-480320-spi-tft-capacitive-touch-display-with-ov2640-camera",
+    "name": "ELECROW ESP32 Terminal- 3.5 inch 480×320 SPI TFT capacitive touch display with OV2640 camera",
+    "price": 4749,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/elecrow-esp32-terminal--3-5-inch-480-320-spi-tft-capacitive-touch-display-with-ov2640-camera-1.jpg",
+      "/products/elecrow-esp32-terminal--3-5-inch-480-320-spi-tft-capacitive-touch-display-with-ov2640-camera-2.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "esp32-dev-board",
+    "name": "ESP32 Development Board",
+    "price": 399,
+    "category": "Development Boards",
+    "images": [
+      "/products/esp32-development-board-1.webp",
+      "/products/esp32-development-board-2.webp"
+    ]
+  },
+  {
+    "id": "esp32-c3-super-mini",
+    "name": "ESP32-C3 Super Mini",
+    "price": 309,
+    "tags": [
+      "esp32",
+      "wifi",
+      "bluetooth"
+    ],
+    "images": [
+      "/products/esp32-c3-super-mini-1.webp",
+      "/products/esp32-c3-super-mini-2.webp",
+      "/products/esp32-c3-super-mini-3.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "esp32-s3-development-board",
+    "name": "ESP32-S3 Development Board",
+    "price": 599,
+    "tags": [
+      "esp32",
+      "wifi",
+      "bluetooth"
+    ],
+    "images": [
+      "/products/esp32-s3-development-board-1.webp",
+      "/products/esp32-s3-development-board-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "esp32-wroom-module",
+    "name": "ESP32-WROOM Module",
+    "price": 399,
+    "tags": [
+      "esp32",
+      "wifi",
+      "module"
+    ],
+    "images": [
+      "/products/esp32-wroom-module-1.webp",
+      "/products/esp32-wroom-module-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "esun-175mm-1kg-pla-3d-printing-filament-magenta-color",
+    "name": "eSun 1.75mm 1kg PLA+ 3D Printing Filament Magenta Color",
+    "price": 1290,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/esun-1-75mm-1kg-pla--3d-printing-filament-magenta-color-1.jpg",
+      "/products/esun-1-75mm-1kg-pla--3d-printing-filament-magenta-color-2.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "female-to-female-jumper-wire-pack",
+    "name": "Female to Female Jumper Wire Pack",
+    "price": 57,
+    "tags": [
+      "jumper-wire",
+      "electronics"
+    ],
+    "images": [
+      "/products/female-to-female-jumper-wire-pack-1.webp",
+      "/products/female-to-female-jumper-wire-pack-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "fly-sky-fs-i6x-24ghz-6ch-afhds-2a-rc-transmitter-with-fs-ia10b-24ghz-10ch-receiver",
+    "name": "Fly Sky FS-i6X 2.4GHz 6CH AFHDS 2A RC Transmitter With FS-iA10B 2.4GHz 10CH Receiver",
+    "price": 6399,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/fly-sky-fs-i6x-2-4ghz-6ch-afhds-2a-rc-transmitter-with-fs-ia10b-2-4ghz-10ch-receiver-1.jpg",
+      "/products/fly-sky-fs-i6x-2-4ghz-6ch-afhds-2a-rc-transmitter-with-fs-ia10b-2-4ghz-10ch-receiver-2.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "flysky-controller",
+    "name": "FlySky FS-i6X RC Transmitter",
+    "price": 6399,
+    "category": "RC",
+    "images": [
+      "/products/flysky-fs-i6x-rc-transmitter-1.webp",
+      "/products/flysky-fs-i6x-rc-transmitter-2.webp"
+    ]
+  },
+  {
+    "id": "gps-neo7m-module",
+    "name": "GPS NEO-7M Module",
+    "price": 599,
+    "tags": [
+      "gps",
+      "module"
+    ],
+    "images": [
+      "/products/gps-neo-7m-module-1.webp",
+      "/products/gps-neo-7m-module-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "hammer-drop-in-t-nut-m3106-tpack-of-10",
+    "name": "Hammer Drop-In T Nut ( M3*10*6 T)(Pack of 10)",
+    "price": 132,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/hammer-drop-in-t-nut---m3-10-6-t--pack-of-10--1.jpg",
+      "/products/hammer-drop-in-t-nut---m3-10-6-t--pack-of-10--2.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "hammer-drop-in-t-nut-m5106-tpack-of-10",
+    "name": "Hammer Drop-In T Nut ( M5*10*6 T)(Pack of 10)",
+    "price": 129,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/hammer-drop-in-t-nut---m3-10-6-t--pack-of-10--1.jpg",
+      "/products/hammer-drop-in-t-nut---m3-10-6-t--pack-of-10--2.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "ultrasonic-sensor",
+    "name": "HC-SR04 Ultrasonic Sensor",
+    "price": 79,
+    "category": "Sensors",
+    "images": [
+      "/products/hc-sr04-ultrasonic-sensor-1.webp",
+      "/products/hc-sr04-ultrasonic-sensor-2.webp"
+    ]
+  },
+  {
+    "id": "helping-hand-magnifier-led-glass-with-soldering-stand",
+    "name": "Helping hand Magnifier Led Glass with Soldering Stand",
+    "price": 489,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/3.png?v=1743773539"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "bluetooth-hm10-module",
+    "name": "HM-10 BLE Bluetooth Module",
+    "price": 249,
+    "tags": [
+      "bluetooth",
+      "ble",
+      "module"
+    ],
+    "images": [
+      "/products/hm-10-ble-bluetooth-module-1.webp",
+      "/products/hm-10-ble-bluetooth-module-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "ir-sensor",
+    "name": "IR Obstacle Sensor Module",
+    "price": 38,
+    "category": "Sensors",
+    "images": [
+      "/products/ir-obstacle-sensor-module-1.webp",
+      "/products/ir-obstacle-sensor-module-2.webp"
+    ]
+  },
+  {
+    "id": "ir-transmitter-and-receiver-kit",
+    "name": "IR Transmitter and Receiver Kit",
+    "price": 89,
+    "tags": [
+      "ir",
+      "sensor",
+      "kit"
+    ],
+    "images": [
+      "/products/ir-transmitter-and-receiver-kit-1.webp",
+      "/products/ir-transmitter-and-receiver-kit-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "bluetooth-jd-y31-module",
+    "name": "JDY-31 Bluetooth Module",
+    "price": 199,
+    "tags": [
+      "bluetooth",
+      "module"
+    ],
+    "images": [
+      "/products/jdy-31-bluetooth-module-1.webp",
+      "/products/jdy-31-bluetooth-module-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "k-type-patch-surface-end-face-thermocouple-cold-pressure-nose-probe-pt100-temperature-sensor-smd-round-hole-temperature-probe-1-meter",
+    "name": "K Type Patch Surface End Face Thermocouple Cold Pressure Nose Probe PT100 Temperature Sensor SMD Round Hole Temperature Probe (1 Meter)",
+    "price": 109,
+    "tags": [
+      "sensor"
+    ],
+    "images": [
+      "/products/k-type-patch-surface-end-face-thermocouple-cold-pressure-nose-probe-pt100-temperature-sensor-smd-round-hole-temperature-probe--1-meter--1.jpg",
+      "/products/k-type-patch-surface-end-face-thermocouple-cold-pressure-nose-probe-pt100-temperature-sensor-smd-round-hole-temperature-probe--1-meter--2.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "k-type-thermocouple-probe-temperature-sensor-6mm-thread-1m-33ft",
+    "name": "K Type Thermocouple Probe Temperature Sensor 6mm Thread 1M 3.3Ft",
+    "price": 89,
+    "tags": [
+      "sensor"
+    ],
+    "images": [
+      "/products/k-type-thermocouple-probe-temperature-sensor-6mm-thread-1m-3-3ft-1.jpg",
+      "/products/k-type-thermocouple-probe-temperature-sensor-6mm-thread-1m-3-3ft-2.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "thermocouple-k-type",
+    "name": "K Type Thermocouple Sensor",
+    "price": 56,
+    "category": "Sensors",
+    "images": [
+      "/products/k-type-thermocouple-sensor-1.webp",
+      "/products/k-type-thermocouple-sensor-2.webp"
+    ]
+  },
+  {
+    "id": "k-type-thermocouple-sensor-probe-0-800-degree-c",
+    "name": "K Type Thermocouple Sensor Probe 0-800 degree C",
+    "price": 56,
+    "tags": [
+      "sensor"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/files/1_50870675-e243-459c-ade0-b44617956778.png?v=1743772894"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "k-type-temperature-thermocouple-1-meter",
+    "name": "K-type Temperature Thermocouple (1 Meter)",
+    "price": 134,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/files/93_525a1008-2fa2-4707-b071-a19dc267e5e0.png?v=1743773718"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "key-display-for-avr-arduino-new-8-bit-digital-led-tube-8-bit-tm1638-module",
+    "name": "Key Display For AVR Arduino New 8-Bit Digital LED Tube 8-Bit TM1638 Module",
+    "price": 279,
+    "tags": [
+      "microcontroller"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/71tubt0nwrl._sl1500.jpg?v=1744280864"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "l298n-driver",
+    "name": "L298N Motor Driver",
+    "price": 149,
+    "category": "Modules",
+    "images": [
+      "/products/l298n-motor-driver-1.webp",
+      "/products/l298n-motor-driver-2.webp"
+    ]
+  },
+  {
+    "id": "ldr-sensor-module",
+    "name": "LDR Sensor Module",
+    "price": 49,
+    "tags": [
+      "ldr",
+      "sensor",
+      "electronics"
+    ],
+    "images": [
+      "/products/ldr-sensor-module-1.webp",
+      "/products/ldr-sensor-module-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "m4-hammer-drop-in-t-nut-m4106-tpack-of-10",
+    "name": "M4 Hammer Drop-In T Nut ( M4*10*6 T)(Pack of 10)",
+    "price": 155,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/m4-hammer-drop-in-t-nut---m4-10-6-t--pack-of-10--1.jpg",
+      "/products/m4-hammer-drop-in-t-nut---m4-10-6-t--pack-of-10--2.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "male-to-female-jumper-wire-pack",
+    "name": "Male to Female Jumper Wire Pack",
+    "price": 57,
+    "tags": [
+      "jumper-wire",
+      "electronics"
+    ],
+    "images": [
+      "/products/male-to-female-jumper-wire-pack-1.webp",
+      "/products/male-to-female-jumper-wire-pack-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "micro-usb-cable",
+    "name": "Micro USB Cable",
+    "price": 79,
+    "tags": [
+      "cable",
+      "usb",
+      "electronics"
+    ],
+    "images": [
+      "/products/micro-usb-cable-1.webp",
+      "/products/micro-usb-cable-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "mk2b-3d-printer-pcb-heat-bed-214-mm",
+    "name": "MK2B 3D Printer PCB Heat Bed - 214 mm",
+    "price": 550,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/618fuojugnl._sl1000.jpg?v=1743774966"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "motorola-sn74ls48n-ic-bcd-to-7-segment-decoder",
+    "name": "Motorola SN74LS48N IC BCD TO 7-Segment Decoder",
+    "price": 26,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/motorola-sn74ls48n-ic-bcd-to-7-segment-decoder-1.jpg",
+      "/products/motorola-sn74ls48n-ic-bcd-to-7-segment-decoder-2.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "multifunction-delay-relay-switch-module",
+    "name": "Multifunction Delay Relay Switch Module",
+    "price": 447,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/WhatsApp_Image_2021-09-08_at_1.15.01_PM__1_-removebg-preview.png?v=1743774390"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "multitec-mt-02dx-stripper",
+    "name": "Multitec MT-02DX+ Stripper",
+    "price": 309,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/2_9ef9c452-b961-48bc-af5a-2404d332dcee.png?v=1743773880"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "multitec-mt-535-nose-plier",
+    "name": "Multitec MT-535 Nose Plier",
+    "price": 196,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/MultitecMT-535NosePlier-Robocraze.png?v=1743773869"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "multitec-mt-555-plier-8",
+    "name": "Multitec MT-555 Plier 8",
+    "price": 218,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/2_a1883ffe-6742-4c43-985a-fbda9d73134f.png?v=1743773866"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "noel-12v-dc-micro-soldering-iron-pen",
+    "name": "Noel 12V DC Micro Soldering Iron Pen",
+    "price": 129,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/files/Noel_12V_DC_Micro_Soldering_Iron_Pen.png?v=1745828339"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "noel-12v-micro-soldering-station",
+    "name": "Noel 12V Micro Soldering Station",
+    "price": 516,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/files/Noel_12V_Micro_Soldering_Station_b9960496-2d46-4a50-b38f-e5c66740a65b.png?v=1752208163"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "noel-25-watt-soldering-iron-with-led-power-indicator-model-super",
+    "name": "Noel 25 Watt Soldering Iron with LED Power Indicator Model-Super",
+    "price": 123,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/noel-25-watt-soldering-iron-with-led-power-indicator-model-super-1.jpg",
+      "/products/noel-25-watt-soldering-iron-with-led-power-indicator-model-super-2.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "desoldering-wick",
+    "name": "Noel Pure Copper Desoldering Wick",
+    "price": 40,
+    "category": "Tools",
+    "images": [
+      "/products/noel-pure-copper-desoldering-wick-wire-1.jpg",
+      "/products/noel-pure-copper-desoldering-wick-wire-2.jpg"
+    ]
+  },
+  {
+    "id": "noel-pure-copper-desoldering-wickwire",
+    "name": "Noel Pure Copper Desoldering Wick/Wire",
+    "price": 40,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/noel-pure-copper-desoldering-wick-wire-1.jpg",
+      "/products/noel-pure-copper-desoldering-wick-wire-2.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "noel-soldering-flux-paste-10gm-pack-yellow",
+    "name": "Noel Soldering Flux Paste 10gm Pack - Yellow",
+    "price": 26,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/files/Noel_Solder_Flux_10gm_Pack_Yellow.png?v=1745838124"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "original-diy-paper-foldscope-microscope-basic-kit",
+    "name": "Original DIY Paper Foldscope Microscope Basic Kit",
+    "price": 449,
+    "tags": [
+      "kit"
+    ],
+    "images": [
+      "/products/original-diy-paper-foldscope-microscope-basic-kit-1.jpg",
+      "/products/original-diy-paper-foldscope-microscope-basic-kit-2.jpg",
+      "/products/original-diy-paper-foldscope-microscope-basic-kit-3.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "original-jhd-20x4-character-lcd-display",
+    "name": "Original JHD 20x4 Character LCD Display",
+    "price": 339,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/files/JHD-204A-Green-Yellow-Roboticsdna.jpg?v=1743773287"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "original-waveshare-101-inch-raspberry-pi-touch-screen-display-1280x800-with-case",
+    "name": "Original Waveshare 10.1 inch Raspberry Pi Touch Screen Display 1280x800 with Case",
+    "price": 11699,
+    "tags": [
+      "microcomputer"
+    ],
+    "images": [
+      "/products/original-waveshare-10-1-inch-raspberry-pi-touch-screen-display-1280x800-with-case-1.jpg",
+      "/products/original-waveshare-10-1-inch-raspberry-pi-touch-screen-display-1280x800-with-case-2.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "owon-mtq-1016b-analogue-oscilloscope-10-mhz-1-channel",
+    "name": "OWON MTQ 1016B Analogue Oscilloscope - 10 MHz 1 Channel",
+    "price": 10999,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/files/New_A_Listing2.png?v=1762086991"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "pludo-solar-wind-tower-stem-kit-diy-science-toy-for-kids-811-grade-35-learn-solar-energy-conversion",
+    "name": "Pludo Solar Wind Tower STEM Kit – DIY Science Toy for Kids 8–11 | Grade 3–5 Learn Solar Energy Conversion",
+    "price": 499,
+    "tags": [
+      "kit"
+    ],
+    "images": [
+      "/products/pludo-solar-wind-tower-stem-kit---diy-science-toy-for-kids-8-11---grade-3-5-learn-solar-energy-conversion-1.jpg",
+      "/products/pludo-solar-wind-tower-stem-kit---diy-science-toy-for-kids-8-11---grade-3-5-learn-solar-energy-conversion-2.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "pt100-m6-screw-probe-thermocouple-temperature-sensor-1-meter",
+    "name": "PT100  M6 Screw Probe Thermocouple Temperature Sensor (1 Meter)",
+    "price": 140,
+    "tags": [
+      "sensor"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/1_a7170653-8bed-4c0d-9819-b276728bffd1.png?v=1743773991"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "radiolink-controller",
+    "name": "Radiolink RC6GS V3",
+    "price": 9499,
+    "category": "RC",
+    "images": [
+      "/products/radiolink-rc6gs-v3-7ch-2-4ghz-rc-transmitter-and-7ch-r7fg-receiver-with-waterproof-gyro-1.jpg",
+      "/products/radiolink-rc6gs-v3-7ch-2-4ghz-rc-transmitter-and-7ch-r7fg-receiver-with-waterproof-gyro-2.jpg",
+      "/products/radiolink-rc6gs-v3-7ch-2-4ghz-rc-transmitter-and-7ch-r7fg-receiver-with-waterproof-gyro-3.jpg"
+    ]
+  },
+  {
+    "id": "radiolink-rc6gs-v3-7ch-24ghz-rc-transmitter-and-7ch-r7fg-receiver-with-waterproof-gyro",
+    "name": "Radiolink RC6GS V3 7CH 2.4GHz RC Transmitter and 7CH R7FG Receiver with Waterproof Gyro",
+    "price": 9499,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/radiolink-rc6gs-v3-7ch-2-4ghz-rc-transmitter-and-7ch-r7fg-receiver-with-waterproof-gyro-1.jpg",
+      "/products/radiolink-rc6gs-v3-7ch-2-4ghz-rc-transmitter-and-7ch-r7fg-receiver-with-waterproof-gyro-2.jpg",
+      "/products/radiolink-rc6gs-v3-7ch-2-4ghz-rc-transmitter-and-7ch-r7fg-receiver-with-waterproof-gyro-3.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "raspberry-pi-4b-4gb-computer-vision-kit",
+    "name": "Raspberry Pi 4B 4GB Computer Vision Kit",
+    "price": 17999,
+    "tags": [
+      "microcomputer"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/files/Raspberry_Pi_4B_4GB_Computer_Vision_Kit.webp?v=1744184076"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "raspberry-vision-kit",
+    "name": "Raspberry Pi 4B Vision Kit",
+    "price": 17999,
+    "category": "Development Boards",
+    "images": [
+      "http://robocraze.com/cdn/shop/files/Raspberry_Pi_4B_4GB_Computer_Vision_Kit.webp"
+    ]
+  },
+  {
+    "id": "raspberry-pi-camera",
+    "name": "Raspberry Pi Camera Module",
+    "price": 1399,
+    "category": "Modules",
+    "images": [
+      "/products/raspberry-pi-camera-module-1.webp",
+      "/products/raspberry-pi-camera-module-2.webp"
+    ]
+  },
+  {
+    "id": "raspberry-pi-zero",
+    "name": "Raspberry Pi Zero",
+    "price": 1599,
+    "category": "Development Boards",
+    "images": [
+      "/products/raspberry-pi-zero-1.webp"
+    ]
+  },
+  {
+    "id": "robocraze-epoxy-coated-tweezer-no9-anti-magnetic-stainless-steel",
+    "name": "Epoxy Coated Tweezer no.9 Anti-Magnetic Stainless Steel",
+    "price": 35,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/robocraze-epoxy-coated-tweezer-no-9-anti-magnetic-stainless-steel-1.jpg",
+      "/products/robocraze-epoxy-coated-tweezer-no-9-anti-magnetic-stainless-steel-2.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "rp203-58mm-panel-thermal-printer",
+    "name": "RP203 58mm Panel Thermal Printer",
+    "price": 1749,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/ccbb2438917474a37fcb8d74b0f8833c_medium_871a1de3-01df-4f63-9285-1953556cabc9.jpg?v=1743774578"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "seeed-studio-xiao-rp2350-development-board",
+    "name": "Seeed Studio XIAO RP2350 Development Board",
+    "price": 1199,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/seeed-studio-xiao-rp2350-development-board-1.jpg",
+      "/products/seeed-studio-xiao-rp2350-development-board-2.jpg",
+      "/products/seeed-studio-xiao-rp2350-development-board-3.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "servo-motor",
+    "name": "SG90 Servo Motor",
+    "price": 129,
+    "category": "Motors",
+    "images": [
+      "/products/sg90-servo-motor-1.webp",
+      "/products/sg90-servo-motor-2.webp"
+    ]
+  },
+  {
+    "id": "sim7600-4g-module",
+    "name": "SIM7600 4G LTE Module",
+    "price": 2199,
+    "tags": [
+      "gsm",
+      "4g",
+      "sim-module"
+    ],
+    "images": [
+      "/products/sim7600-4g-lte-module-1.webp",
+      "/products/sim7600-4g-lte-module-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "smartelex-basic-40-hmi-display-320480-tft-screen-with-resistive-touch-and-uart-interface",
+    "name": "SmartElex Basic 4.0″ HMI Display – 320×480 TFT Screen with Resistive Touch and UART Interface",
+    "price": 2999,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/smartelex-basic-4-0--hmi-display---320-480-tft-screen-with-resistive-touch-and-uart-interface-1.jpg",
+      "/products/smartelex-basic-4-0--hmi-display---320-480-tft-screen-with-resistive-touch-and-uart-interface-2.jpg",
+      "/products/smartelex-basic-4-0--hmi-display---320-480-tft-screen-with-resistive-touch-and-uart-interface-3.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "smartelex-bharat-ai-innovators-kit-powered-by-arduino-for-stem-learning",
+    "name": "SmartElex Bharat AI Innovators Kit Powered by Arduino for STEM Learning",
+    "price": 2799,
+    "tags": [
+      "microcontroller"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/files/SmartElex_Bharat_AI_Innovators_Kit_Powered_by_Arduino_for_STEM_Learning.png?v=1758696026"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "soil-moisture-sensor",
+    "name": "Soil Moisture Sensor",
+    "price": 59,
+    "category": "Sensors",
+    "images": [
+      "/products/soil-moisture-sensor-2.webp"
+    ]
+  },
+  {
+    "id": "solar-powered-black-cockroach-bug-toy",
+    "name": "Solar powered Black Cockroach Bug Toy",
+    "price": 199,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/Capture_04c008c0-890b-4302-a51d-6295ae0ea9b7.png?v=1743774300"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "solar-wind-kit",
+    "name": "Solar Wind STEM Kit",
+    "price": 499,
+    "category": "Kits",
+    "images": [
+      "/products/solar-wind-stem-kit-1.webp"
+    ]
+  },
+  {
+    "id": "soldering-flux-paste",
+    "name": "Soldering Flux Paste 10gm",
+    "price": 16,
+    "category": "Tools",
+    "images": [
+      "/products/soldering-flux-paste-10gm-1.webp",
+      "/products/soldering-flux-paste-10gm-2.webp"
+    ]
+  },
+  {
+    "id": "soldering-iron-25w-gold-with-advanced-heating-element",
+    "name": "Soldering Iron 25W Gold with Advanced Heating Element",
+    "price": 229,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/files/Soldering_Iron_25W_Gold.png?v=1745823216"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "solderless-mini-breadboard",
+    "name": "Solderless Mini Breadboard",
+    "price": 39,
+    "tags": [
+      "breadboard",
+      "electronics"
+    ],
+    "images": [
+      "/products/solderless-mini-breadboard-1.webp",
+      "/products/solderless-mini-breadboard-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "spider-robot-insect-fun-toy",
+    "name": "Spider Robot Insect Fun Toy",
+    "price": 349,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/41xumEtmd8L.jpg?v=1743774299"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "surface-thermocouple-k-type-high-temperature-resistance-probe-1-meter",
+    "name": "Surface Thermocouple K Type High Temperature Resistance Probe (1 Meter)",
+    "price": 44,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/Ktypethermocouple.png?v=1743773993"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "tm1637-4-digit-7-segment-led-display",
+    "name": "TM1637 4 Digit 7 Segment LED Display",
+    "price": 50,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/46.png?v=1743775571"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "tm1637-4-digit-display-ir-proximity-sensor",
+    "name": "TM1637 4-Digit Display + IR Proximity Sensor",
+    "price": 102,
+    "tags": [
+      "sensor"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/untitled_design_36.jpg?v=1743775012"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "toyo-plcc-ic-extractor",
+    "name": "Toyo PLCC IC Extractor",
+    "price": 194,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/toyo-plcc-ic-extractor-1.jpg",
+      "/products/toyo-plcc-ic-extractor-2.jpg",
+      "/products/toyo-plcc-ic-extractor-3.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "usb-charger-doctor-for-voltmeter-and-ammeter",
+    "name": "USB Charger Doctor for Voltmeter and Ammeter",
+    "price": 109,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "http://robocraze.com/cdn/shop/products/53.png?v=1743775372"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "usb-type-c-data-cable",
+    "name": "USB Type-C Data Cable",
+    "price": 99,
+    "tags": [
+      "cable",
+      "usb",
+      "electronics"
+    ],
+    "images": [
+      "/products/usb-type-c-data-cable-1.webp",
+      "/products/usb-type-c-data-cable-2.webp"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "waveshare-116inch-hdmi-capacitive-touch-display-1920x1080-for-raspberry-pi",
+    "name": "Waveshare 11.6Inch HDMI Capacitive Touch Display 1920x1080 for Raspberry Pi",
+    "price": 16999,
+    "tags": [
+      "microcomputer"
+    ],
+    "images": [
+      "/products/waveshare-11-6inch-hdmi-capacitive-touch-display-1920x1080-for-raspberry-pi-1.jpg",
+      "/products/waveshare-11-6inch-hdmi-capacitive-touch-display-1920x1080-for-raspberry-pi-2.jpg",
+      "/products/waveshare-11-6inch-hdmi-capacitive-touch-display-1920x1080-for-raspberry-pi-3.jpg",
+      "/products/waveshare-11-6inch-hdmi-capacitive-touch-display-1920x1080-for-raspberry-pi-4.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "waveshare-43inch-dsi-lcd-capacitive-touch-display-800480-for-raspberry-pi",
+    "name": "Waveshare 4.3inch DSI LCD Capacitive Touch Display 800×480 for Raspberry Pi",
+    "price": 3449,
+    "tags": [
+      "microcomputer"
+    ],
+    "images": [
+      "/products/waveshare-4-3inch-dsi-lcd-capacitive-touch-display-800-480-for-raspberry-pi-1.jpg",
+      "/products/waveshare-4-3inch-dsi-lcd-capacitive-touch-display-800-480-for-raspberry-pi-2.jpg",
+      "/products/waveshare-4-3inch-dsi-lcd-capacitive-touch-display-800-480-for-raspberry-pi-3.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "waveshare-5-inch-hdmi-resistive-touchscreen-display",
+    "name": "Waveshare 5 inch HDMI Resistive Touchscreen Display",
+    "price": 3799,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/waveshare-5-inch-hdmi-resistive-touchscreen-display-1.jpg",
+      "/products/waveshare-5-inch-hdmi-resistive-touchscreen-display-2.jpg",
+      "/products/waveshare-5-inch-hdmi-resistive-touchscreen-display-3.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "waveshare-55inch-hdmi-capacitive-touch-amoled-display-1080x1920-with-case",
+    "name": "Waveshare 5.5inch HDMI Capacitive Touch AMOLED Display 1080x1920 with Case",
+    "price": 11499,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/waveshare-5-5inch-hdmi-capacitive-touch-amoled-display-1080x1920-with-case-1.jpg",
+      "/products/waveshare-5-5inch-hdmi-capacitive-touch-amoled-display-1080x1920-with-case-2.jpg",
+      "/products/waveshare-5-5inch-hdmi-capacitive-touch-amoled-display-1080x1920-with-case-3.jpg"
+    ],
+    "category": "Components"
+  },
+  {
+    "id": "waveshare-79inch-hdmi-capacitive-touch-screen-lcd-4001280-with-toughened-glass-cover",
+    "name": "Waveshare 7.9inch HDMI Capacitive Touch Screen LCD 400×1280 with Toughened Glass Cover",
+    "price": 7214,
+    "tags": [
+      "electronics"
+    ],
+    "images": [
+      "/products/waveshare-7-9inch-hdmi-capacitive-touch-screen-lcd-400-1280-with-toughened-glass-cover-1.jpg",
+      "/products/waveshare-7-9inch-hdmi-capacitive-touch-screen-lcd-400-1280-with-toughened-glass-cover-2.jpg",
+      "/products/waveshare-7-9inch-hdmi-capacitive-touch-screen-lcd-400-1280-with-toughened-glass-cover-3.jpg"
+    ],
+    "category": "Components"
   },
   {
     "id": "waveshare-7inch-capacitive-touch-display-for-raspberry-pi-dsi-interface-800x-480",
@@ -943,353 +1825,35 @@
     ],
     "images": [
       "http://robocraze.com/cdn/shop/files/Waveshare_7inch_Capacitive_Touch_Display_for_Raspberry_Pi.png?v=1746612248"
-    ]
+    ],
+    "category": "Components"
   },
   {
-    "id": "waveshare-79inch-hdmi-capacitive-touch-screen-lcd-4001280-with-toughened-glass-cover",
-    "name": "Waveshare 7.9inch HDMI Capacitive Touch Screen LCD 400×1280 with Toughened Glass Cover",
-    "price": 7214,
+    "id": "waveshare-modbus-rtu-8-channel-relay-module-rs485",
+    "name": "Waveshare Modbus RTU 8 Channel Relay Module RS485",
+    "price": 2849,
     "tags": [
       "electronics"
     ],
     "images": [
-      "/images/placeholder.png"
-    ]
+      "/products/waveshare-modbus-rtu-8-channel-relay-module-rs485-1.jpg",
+      "/products/waveshare-modbus-rtu-8-channel-relay-module-rs485-2.jpg",
+      "/products/waveshare-modbus-rtu-8-channel-relay-module-rs485-3.jpg"
+    ],
+    "category": "Components"
   },
   {
-    "id": "waveshare-43inch-dsi-lcd-capacitive-touch-display-800480-for-raspberry-pi",
-    "name": "Waveshare 4.3inch DSI LCD Capacitive Touch Display 800×480 for Raspberry Pi",
-    "price": 3449,
+    "id": "wifi-usb-adapter-module",
+    "name": "WiFi USB Adapter Module",
+    "price": 299,
     "tags": [
-      "microcomputer"
+      "wifi",
+      "module"
     ],
     "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "waveshare-5-inch-hdmi-resistive-touchscreen-display",
-    "name": "Waveshare 5 inch HDMI Resistive Touchscreen Display",
-    "price": 3799,
-    "tags": [
-      "electronics"
+      "/products/wifi-usb-adapter-module-for-arduino--1.webp",
+      "/products/wifi-usb-adapter-module-for-arduino--2.webp"
     ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "original-waveshare-101-inch-raspberry-pi-touch-screen-display-1280x800-with-case",
-    "name": "Original Waveshare 10.1 inch Raspberry Pi Touch Screen Display 1280x800 with Case",
-    "price": 11699,
-    "tags": [
-      "microcomputer"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "waveshare-55inch-hdmi-capacitive-touch-amoled-display-1080x1920-with-case",
-    "name": "Waveshare 5.5inch HDMI Capacitive Touch AMOLED Display 1080x1920 with Case",
-    "price": 11499,
-    "tags": [
-      "electronics"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "101inch-hdmi-capacitive-touch-screen-lcd-e-1024600-supports-raspberry-pi",
-    "name": "10.1inch HDMI Capacitive Touch Screen LCD (E) 1024Ã—600 Supports Raspberry Pi",
-    "price": 10399,
-    "tags": [
-      "microcomputer"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "waveshare-116inch-hdmi-capacitive-touch-display-1920x1080-for-raspberry-pi",
-    "name": "Waveshare 11.6Inch HDMI Capacitive Touch Display 1920x1080 for Raspberry Pi",
-    "price": 16999,
-    "tags": [
-      "microcomputer"
-    ],
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "aluminium-heatsink-19mmx19mmx15mm",
-    "name": "Aluminium Heatsink 19mmx19mmx15mm Silver Tone",
-    "price": 13,
-    "category": "Components",
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "3d-printer-spring-hotbed",
-    "name": "3D Printer Parts Spring For Heated Bed",
-    "price": 24,
-    "category": "3D Printing",
-    "images": [
-      "http://robocraze.com/cdn/shop/products/1_77064a8f.png"
-    ]
-  },
-  {
-    "id": "soldering-flux-paste",
-    "name": "Soldering Flux Paste 10gm",
-    "price": 26,
-    "category": "Tools",
-    "images": [
-      "http://robocraze.com/cdn/shop/files/Noel_Solder_Flux_10gm.png"
-    ]
-  },
-  {
-    "id": "anti-magnetic-tweezer",
-    "name": "Anti Magnetic Tweezer No.9",
-    "price": 35,
-    "category": "Tools",
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "desoldering-wick",
-    "name": "Noel Pure Copper Desoldering Wick",
-    "price": 40,
-    "category": "Tools",
-    "images": [
-      "/images/placeholder.png"
-    ]
-  },
-  {
-    "id": "thermocouple-k-type",
-    "name": "K Type Thermocouple Sensor",
-    "price": 56,
-    "category": "Sensors",
-    "images": [
-      "http://robocraze.com/cdn/shop/files/1_50870675.png"
-    ]
-  },
-  {
-    "id": "flexible-coupling",
-    "name": "5mm to 5mm Flexible Couplings",
-    "price": 65,
-    "category": "Components",
-    "images": [
-      "http://robocraze.com/cdn/shop/products/41nrjhiwtkl.jpg"
-    ]
-  },
-  {
-    "id": "ultrasonic-sensor",
-    "name": "HC-SR04 Ultrasonic Sensor",
-    "price": 79,
-    "category": "Sensors",
-    "images": [
-      "/products/ultrasonic-sensor.jpg"
-    ]
-  },
-  {
-    "id": "ir-sensor",
-    "name": "IR Obstacle Sensor Module",
-    "price": 49,
-    "category": "Sensors",
-    "images": [
-      "/products/ir-sensor.jpg"
-    ]
-  },
-  {
-    "id": "soil-moisture-sensor",
-    "name": "Soil Moisture Sensor",
-    "price": 59,
-    "category": "Sensors",
-    "images": [
-      "/products/soil-moisture-sensor.jpg"
-    ]
-  },
-  {
-    "id": "dht11-sensor",
-    "name": "DHT11 Sensor",
-    "price": 89,
-    "category": "Sensors",
-    "images": [
-      "/products/dht11-sensor.jpg"
-    ]
-  },
-  {
-    "id": "arduino-nano",
-    "name": "Arduino Nano",
-    "price": 249,
-    "category": "Arduino",
-    "images": [
-      "/products/arduino-nano.jpg"
-    ]
-  },
-  {
-    "id": "arduino-uno",
-    "name": "Arduino Uno R3",
-    "price": 699,
-    "category": "Arduino",
-    "images": [
-      "/products/arduino-uno.jpg"
-    ]
-  },
-  {
-    "id": "esp32-dev-board",
-    "name": "ESP32 Development Board",
-    "price": 499,
-    "category": "Development Boards",
-    "images": [
-      "/products/esp32-dev-board.jpg"
-    ]
-  },
-  {
-    "id": "servo-motor",
-    "name": "SG90 Servo Motor",
-    "price": 129,
-    "category": "Motors",
-    "images": [
-      "/products/servo-motor.jpg"
-    ]
-  },
-  {
-    "id": "stepper-motor",
-    "name": "28BYJ-48 Stepper Motor",
-    "price": 149,
-    "category": "Motors",
-    "images": [
-      "/products/stepper-motor.jpg"
-    ]
-  },
-  {
-    "id": "relay-module",
-    "name": "5V Relay Module",
-    "price": 79,
-    "category": "Modules",
-    "images": [
-      "/products/relay-module.jpg"
-    ]
-  },
-  {
-    "id": "l298n-driver",
-    "name": "L298N Motor Driver",
-    "price": 149,
-    "category": "Modules",
-    "images": [
-      "/products/l298n-motor-driver.jpg"
-    ]
-  },
-  {
-    "id": "raspberry-pi-zero",
-    "name": "Raspberry Pi Zero",
-    "price": 1599,
-    "category": "Development Boards",
-    "images": [
-      "/products/raspberry-pi-zero.jpg"
-    ]
-  },
-  {
-    "id": "raspberry-pi-camera",
-    "name": "Raspberry Pi Camera Module",
-    "price": 1299,
-    "category": "Modules",
-    "images": [
-      "/products/raspberry-pi-camera.jpg"
-    ]
-  },
-  {
-    "id": "thermal-printer",
-    "name": "58mm Thermal Printer",
-    "price": 1749,
-    "category": "Modules",
-    "images": [
-      "/products/thermal-printer-58mm.jpg"
-    ]
-  },
-  {
-    "id": "tft-display",
-    "name": "3.2 inch TFT LCD Display",
-    "price": 1313,
-    "category": "Displays",
-    "images": [
-      "/products/tft-lcd-3-2.jpg"
-    ]
-  },
-  {
-    "id": "solar-car-kit",
-    "name": "DIY Solar Car Kit",
-    "price": 133,
-    "category": "Kits",
-    "images": [
-      "/products/solar-car-kit.jpg"
-    ]
-  },
-  {
-    "id": "solar-wind-kit",
-    "name": "Solar Wind STEM Kit",
-    "price": 499,
-    "category": "Kits",
-    "images": [
-      "/products/solar-wind-kit.jpg"
-    ]
-  },
-  {
-    "id": "flysky-controller",
-    "name": "FlySky FS-i6X RC Transmitter",
-    "price": 6399,
-    "category": "RC",
-    "images": [
-      "/products/flysky-fs-i6x.jpg"
-    ]
-  },
-  {
-    "id": "radiolink-controller",
-    "name": "Radiolink RC6GS V3",
-    "price": 9499,
-    "category": "RC",
-    "images": [
-      "/products/radiolink-rc6gs.jpg"
-    ]
-  },
-  {
-    "id": "acebott-esp32-kit",
-    "name": "ACEBOTT ESP32 Smart Kit",
-    "price": 7899,
-    "category": "Kits",
-    "images": [
-      "/products/acebott-esp32-kit.jpg"
-    ]
-  },
-  {
-    "id": "arduino-opla-kit",
-    "name": "Arduino Opla IoT Kit",
-    "price": 12399,
-    "category": "Arduino",
-    "images": [
-      "/products/arduino-opla-iot-kit.jpg"
-    ]
-  },
-  {
-    "id": "raspberry-vision-kit",
-    "name": "Raspberry Pi 4B Vision Kit",
-    "price": 16999,
-    "category": "Development Boards",
-    "images": [
-      "http://robocraze.com/cdn/shop/files/Raspberry_Pi_4B_4GB_Computer_Vision_Kit.webp"
-    ]
-  },
-  {
-    "id": "anycubic-printer",
-    "name": "Anycubic Kobra 2 Neo 3D Printer",
-    "price": 14899,
-    "category": "3D Printing",
-    "images": [
-      "/products/anycubic-kobra-neo.jpg"
-    ]
+    "category": "Components"
   }
 ]

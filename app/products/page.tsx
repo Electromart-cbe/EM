@@ -8,7 +8,17 @@ import productsData from "@/data/products.json";
 import { Product } from "@/context/ShoppingCartContext";
 
 const allProducts = productsData as Product[];
-const validProducts = allProducts.filter((p) => p.images && p.images.length > 0);
+const validProducts = allProducts.filter(
+  (p) =>
+    Array.isArray(p.images) &&
+    p.images.some(
+      (img) =>
+        img &&
+        typeof img === "string" &&
+        img.trim() !== "" &&
+        !img.includes("placeholder")
+    )
+);
 
 function ProductsContent() {
 
@@ -18,10 +28,18 @@ function ProductsContent() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 10000]);
-  const [sortBy, setSortBy] = useState<"featured" | "price-asc" | "price-desc">("featured");
+  const [sortBy, setSortBy] = useState<"featured" | "price-asc" | "price-desc" | "name-asc" | "name-desc">("featured");
   const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
 
-  const categories = ["", ...Array.from(new Set(validProducts.map((p) => p.category)))];
+  const categories = [
+    "",
+    ...Array.from(new Set(
+      validProducts
+        .map((p) => p.category)
+        .filter(Boolean)
+        .filter((c) => c.trim() !== "")
+    ))
+  ];
   
   // Calculate max price from data for range slider
   const maxPriceInCatalog = validProducts.length > 0 
@@ -33,7 +51,11 @@ function ProductsContent() {
       .filter((product) => {
         const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
                              (product.tags || []).some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
-        const matchesCategory = selectedCategory === "" || product.category === selectedCategory;
+        
+        // Safe case-insensitive category matching
+        const matchesCategory = selectedCategory === "" || 
+                                (product.category && product.category.trim().toLowerCase() === selectedCategory.trim().toLowerCase());
+                                
         const matchesPrice = product.price >= priceRange[0] && (priceRange[1] >= maxPriceInCatalog ? true : product.price <= priceRange[1]);
         
         return matchesSearch && matchesCategory && matchesPrice;
@@ -41,12 +63,14 @@ function ProductsContent() {
       .sort((a, b) => {
         if (sortBy === "price-asc") return a.price - b.price;
         if (sortBy === "price-desc") return b.price - a.price;
+        if (sortBy === "name-asc") return a.name.localeCompare(b.name);
+        if (sortBy === "name-desc") return b.name.localeCompare(a.name);
         return 0; // featured/default
       });
   }, [searchQuery, selectedCategory, priceRange, sortBy, maxPriceInCatalog]);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+    <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-8 py-8 md:py-12">
       {/* Header & Search */}
       <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
         <div>
@@ -156,12 +180,14 @@ function ProductsContent() {
                 <option value="featured">Featured</option>
                 <option value="price-asc">Price: Low to High</option>
                 <option value="price-desc">Price: High to Low</option>
+                <option value="name-asc">A-Z</option>
+                <option value="name-desc">Z-A</option>
               </select>
             </div>
           </div>
 
           {filteredProducts.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
               {filteredProducts.map((product) => (
                 <ProductItemCard key={product.id} product={product} />
               ))}
