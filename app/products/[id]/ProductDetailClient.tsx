@@ -6,6 +6,7 @@ import { ArrowLeft, ShieldCheck, Truck, Zap, Package } from "lucide-react";
 import { Product, useCart } from "@/context/ShoppingCartContext";
 import ProductItemCard from "@/components/product/ProductItemCard";
 import AddToCartButton from "@/components/product/AddToCartButton";
+import { getAssetPath } from "@/lib/getAssetPath";
 
 export default function ProductDetailClient({
   product,
@@ -17,9 +18,7 @@ export default function ProductDetailClient({
   const { addRecentlyViewed, recentlyViewed } = useCart();
 
   const formatUrl = (url?: string) => {
-    if (!url) return `/images/placeholder.png`;
-    if (url.startsWith("http")) return url;
-    return url.toLowerCase().replace(/\s+/g, "-");
+    return getAssetPath(url || "/images/placeholder.png");
   };
 
   const validImages = (product.images || [])
@@ -33,7 +32,7 @@ export default function ProductDetailClient({
     .map(formatUrl);
 
   const displayImages =
-    validImages.length > 0 ? validImages : ["/images/placeholder.png"];
+    validImages.length > 0 ? validImages : [getAssetPath("/images/placeholder.png")];
 
   const [mainImage, setMainImage] = useState(displayImages[0]);
   const [activeThumb, setActiveThumb] = useState(0);
@@ -90,7 +89,7 @@ export default function ProductDetailClient({
                 loading="lazy"
                 className="w-full h-full object-contain"
                 onError={(e) => {
-                  e.currentTarget.src = "/images/placeholder.png";
+                  e.currentTarget.src = getAssetPath("/images/placeholder.png");
                   e.currentTarget.onerror = null;
                 }}
               />
@@ -115,7 +114,7 @@ export default function ProductDetailClient({
                       loading="lazy"
                       className="w-full h-full object-contain"
                       onError={(e) => {
-                        e.currentTarget.src = "/images/placeholder.png";
+                        e.currentTarget.src = getAssetPath("/images/placeholder.png");
                         e.currentTarget.onerror = null;
                       }}
                     />

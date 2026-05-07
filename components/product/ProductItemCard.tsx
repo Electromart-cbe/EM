@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { ShoppingCart, Star } from "lucide-react";
 import { Product, useCart } from "@/context/ShoppingCartContext";
+import { getAssetPath } from "@/lib/getAssetPath";
 
 export default function ProductItemCard({ product }: { product: Product }) {
   const { addToCart } = useCart();
@@ -14,11 +15,9 @@ export default function ProductItemCard({ product }: { product: Product }) {
     addToCart(product);
   };
 
-  const imgSrc =
-    product.images?.[0]?.startsWith("http")
-      ? product.images[0]
-      : product.images?.[0]?.toLowerCase().replace(/\s+/g, "-") ||
-        "/images/placeholder.png";
+  const imgSrc = getAssetPath(
+    product.images?.[0] ?? "/images/placeholder.png"
+  );
 
   return (
     <Link href={`/products/${product.id}`} className="group block h-full">
@@ -41,7 +40,7 @@ export default function ProductItemCard({ product }: { product: Product }) {
               loading="lazy"
               className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
               onError={(e) => {
-                e.currentTarget.src = "/images/placeholder.png";
+                e.currentTarget.src = getAssetPath("/images/placeholder.png");
                 e.currentTarget.onerror = null;
               }}
             />

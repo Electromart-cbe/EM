@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ShoppingCart, Menu, X, Search } from "lucide-react";
 import { useCart } from "@/context/ShoppingCartContext";
+import { getAssetPath } from "@/lib/getAssetPath";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +27,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
             <img
-              src="/images/logo.jpg"
+              src={getAssetPath("/images/logo.jpg")}
               className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 object-contain logo"
               alt="Electromart Logo"
             />
